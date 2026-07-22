@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     api_url: str = "http://localhost:8000"
     database_url: str | None = None
     backend_cors_origins: str = "http://localhost:3000"
-    secret_key: str = "change-me-in-production"
+    secret_key: str = "change-me-in-production-use-at-least-32-characters"
     access_token_expire_minutes: int = 15
     refresh_token_expire_days: int = 14
     admin_session_cookie_name: str = "admin_session"
@@ -27,7 +27,7 @@ class Settings(BaseSettings):
     @field_validator("secret_key")
     @classmethod
     def validate_secret_key(cls, value: str) -> str:
-        if value == "change-me-in-production":
+        if value == "change-me-in-production-use-at-least-32-characters":
             return value
         if len(value) < 32:
             raise ValueError("SECRET_KEY must be at least 32 characters in non-placeholder use.")

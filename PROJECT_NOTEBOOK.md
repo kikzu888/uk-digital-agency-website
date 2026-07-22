@@ -61,6 +61,7 @@
 - Initialised a project-local Git repository.
 - Created the private GitHub repository `kikzu888/uk-digital-agency-website`.
 - Pushed the full project source to GitHub on the `main` branch.
+- Fixed GitHub Actions failures by synchronising the frontend lockfile, upgrading Next.js, adding npm dependency overrides for audited `postcss` and `sharp` versions, and replacing `python-jose` with `PyJWT[crypto]`.
 
 ### Remaining
 
@@ -75,6 +76,9 @@
 - Existing `main.py` is a PyCharm sample file and is not yet part of the planned backend structure.
 - `npm install` initially failed because Node/npm could not verify the registry certificate chain: `UNABLE_TO_VERIFY_LEAF_SIGNATURE`.
 - Docker CLI is not installed or not available on PATH in this environment.
+- GitHub Actions initially failed because `frontend/package-lock.json` was out of sync with `package.json`.
+- GitHub Actions initially failed because `python-jose` pulled in the vulnerable `ecdsa` package.
+- NPM audit reported unresolved advisories through Next.js transitive `postcss` and `sharp` versions.
 
 ### Fixes Applied
 
@@ -88,6 +92,9 @@
 - Disabled the ESLint triple-slash rule for Next's generated `next-env.d.ts` pattern.
 - Replaced `passlib`/`bcrypt` hashing with standard-library PBKDF2-SHA256 after local bcrypt compatibility failure.
 - Added `ADMIN_PASSWORD_HASH`; plaintext admin passwords must not be stored.
+- Replaced backend JWT handling with `PyJWT[crypto]`.
+- Updated the default development `SECRET_KEY` placeholder length to satisfy HS256 key-length guidance.
+- Upgraded frontend to Next.js `16.2.11` and added npm overrides for `postcss` `^8.5.22` and `sharp` `^0.35.3`.
 
 ### Commands To Run Later
 
@@ -109,13 +116,14 @@ Latest backend verification result:
 
 Latest frontend verification result:
 
-- `npm install` with `NODE_OPTIONS=--use-system-ca`: passed
+- `npm ci` with `NODE_OPTIONS=--use-system-ca`: passed
 - `npm run lint`: passed
 - `npm run typecheck`: passed
 - `npm run test`: 5 passed
 - `npm run e2e`: 4 passed
+- `npm audit --audit-level=high`: passed, 0 vulnerabilities
 - `npm run build`: passed
-- Local frontend dev server: running at `http://localhost:3000`
+- Local frontend dev server: stopped during CI troubleshooting so `npm ci` could replace locked Windows binaries.
 - Local backend dev server: running at `http://127.0.0.1:8000`
 
 ```bash

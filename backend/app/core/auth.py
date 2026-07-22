@@ -4,9 +4,10 @@ import hmac
 import secrets
 from datetime import UTC, datetime, timedelta
 from os import getenv
-from typing import Any, cast
+from typing import Any
 
-from jose import JWTError, jwt  # type: ignore[import-untyped]
+import jwt
+from jwt import PyJWTError
 
 from app.core.config import settings
 
@@ -59,15 +60,13 @@ def create_access_token(subject: str, role: str) -> str:
         "exp": expires_at,
         "type": "access",
     }
-    return cast(str, jwt.encode(payload, settings.secret_key, algorithm=ALGORITHM))
+    return jwt.encode(payload, settings.secret_key, algorithm=ALGORITHM)
 
 
 def decode_access_token(token: str) -> dict[str, Any] | None:
     try:
-        payload = cast(
-            dict[str, Any], jwt.decode(token, settings.secret_key, algorithms=[ALGORITHM])
-        )
-    except JWTError:
+        payload = jwt.decode(token, settings.secret_key, algorithms=[ALGORITHM])
+    except PyJWTError:
         return None
     if payload.get("type") != "access":
         return None

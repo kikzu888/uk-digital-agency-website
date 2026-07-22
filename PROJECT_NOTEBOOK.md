@@ -58,6 +58,9 @@
 - Added minimal admin frontend: `/admin/login` and `/admin` contact submissions dashboard.
 - Added Admin Login E2E smoke coverage.
 - Replaced frontend admin sessionStorage token handling with backend-set HTTP-only admin session cookies.
+- Initialised a project-local Git repository.
+- Created the private GitHub repository `kikzu888/uk-digital-agency-website`.
+- Pushed the full project source to GitHub on the `main` branch.
 
 ### Remaining
 
@@ -129,4 +132,6 @@ docker compose up --build
 
 ### Deployment Status
 
-Not deployed. No domain, hosting, or production deployment has been purchased or created.
+Source code is pushed to GitHub at `https://github.com/kikzu888/uk-digital-agency-website`.
+
+Not deployed to hosting. No domain, hosting, or production deployment has been purchased or created.

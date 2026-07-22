@@ -39,7 +39,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
           summary="SEO-ready editorial structure for useful UK business technology articles. Demo articles are placeholders."
           title="Insights for better digital decisions"
         />
-        <form className="mt-10 grid gap-4 rounded-md border border-slate-200 bg-white p-5 md:grid-cols-[1fr_240px_auto]" role="search">
+        <form className="mt-10 grid gap-4 rounded-md border border-slate-200 bg-white/90 p-5 md:grid-cols-[1fr_240px_auto]" role="search">
           <input
             className="rounded-md border border-slate-300 px-4 py-3"
             defaultValue={params.q}
@@ -55,13 +55,13 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
               </option>
             ))}
           </select>
-          <button className="rounded-md bg-emerald-900 px-5 py-3 font-semibold text-white" type="submit">
+          <button className="rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white" type="submit">
             Search
           </button>
         </form>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {items.map((article) => (
-            <article className="rounded-md border border-slate-200 bg-white shadow-sm" key={article.slug}>
+            <article className="rounded-md border border-slate-200 bg-white/90 shadow-sm" key={article.slug}>
               <Image
                 alt={article.featuredImageAlt}
                 className="h-48 w-full rounded-t-md object-cover"
@@ -70,7 +70,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
                 width={800}
               />
               <div className="p-6">
-                <p className="text-xs font-semibold uppercase text-emerald-900">{article.category}</p>
+                <p className="text-xs font-semibold uppercase text-[#0b4fd8]">{article.category}</p>
                 <h2 className="mt-3 text-xl font-semibold text-slate-950">
                   <Link href={`/news/${article.slug}`}>{article.title}</Link>
                 </h2>

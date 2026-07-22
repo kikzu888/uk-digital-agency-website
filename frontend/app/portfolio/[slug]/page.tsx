@@ -39,7 +39,7 @@ export default async function PortfolioProjectPage({ params }: PortfolioProjectP
   return (
     <main>
       <article className="mx-auto max-w-5xl px-6 py-20">
-        <Link className="text-sm font-semibold text-emerald-900" href="/portfolio">
+        <Link className="text-sm font-semibold text-[#0b4fd8]" href="/portfolio">
           Back to Portfolio
         </Link>
         {project.isPlaceholder ? (
@@ -61,7 +61,7 @@ export default async function PortfolioProjectPage({ params }: PortfolioProjectP
           <ContentBlock title="Business problem" value={project.businessProblem} />
           <ContentBlock title="Solution" value={project.solution} />
         </div>
-        <section className="mt-10 rounded-md border border-slate-200 bg-white p-6">
+        <section className="mt-10 rounded-md border border-slate-200 bg-white/90 p-6">
           <h2 className="text-2xl font-semibold text-slate-950">Technologies</h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {project.technologies.map((technology) => (
@@ -79,7 +79,7 @@ export default async function PortfolioProjectPage({ params }: PortfolioProjectP
             ))}
           </ul>
         </section>
-        <Link className="mt-10 inline-flex rounded-md bg-emerald-900 px-5 py-3 font-semibold text-white" href="/contact">
+        <Link className="mt-10 inline-flex rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white" href="/contact">
           Request a Similar Project
         </Link>
       </article>
@@ -89,7 +89,7 @@ export default async function PortfolioProjectPage({ params }: PortfolioProjectP
 
 function ContentBlock({ title, value }: { title: string; value: string }) {
   return (
-    <section className="rounded-md border border-slate-200 bg-white p-6">
+    <section className="rounded-md border border-slate-200 bg-white/90 p-6">
       <h2 className="text-xl font-semibold text-slate-950">{title}</h2>
       <p className="mt-3 text-sm leading-6 text-slate-600">{value}</p>
     </section>

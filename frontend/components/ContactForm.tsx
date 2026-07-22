@@ -117,7 +117,7 @@ export function ContactForm() {
       <label className="grid gap-2 text-sm font-medium text-slate-800">
         Project description
         <textarea
-          className="min-h-36 rounded-md border border-slate-300 bg-white px-4 py-3 text-base outline-none focus:border-emerald-900"
+          className="min-h-36 rounded-md border border-slate-300 bg-white/90 px-4 py-3 text-base outline-none focus:border-[#0b4fd8]"
           name="projectDescription"
         />
         {errors.projectDescription ? <span className="text-sm text-red-700">{errors.projectDescription}</span> : null}
@@ -131,11 +131,11 @@ export function ContactForm() {
         <input className="mt-1 h-4 w-4" name="marketingConsent" type="checkbox" />
         <span>I agree to receive occasional marketing updates.</span>
       </label>
-      <button className="rounded-md bg-emerald-900 px-5 py-3 font-semibold text-white" type="submit">
+      <button className="rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white" type="submit">
         Send Enquiry
       </button>
       {state.message ? (
-        <p className={state.status === "success" ? "text-sm text-emerald-900" : "text-sm text-red-700"}>
+        <p className={state.status === "success" ? "text-sm text-[#0b4fd8]" : "text-sm text-red-700"}>
           {state.message}
         </p>
       ) : null}
@@ -158,7 +158,7 @@ function Field({
     <label className="grid gap-2 text-sm font-medium text-slate-800">
       {label}
       <input
-        className="rounded-md border border-slate-300 bg-white px-4 py-3 text-base outline-none focus:border-emerald-900"
+        className="rounded-md border border-slate-300 bg-white/90 px-4 py-3 text-base outline-none focus:border-[#0b4fd8]"
         name={name}
         type={type}
       />
@@ -182,7 +182,7 @@ function SelectField({
     <label className="grid gap-2 text-sm font-medium text-slate-800">
       {label}
       <select
-        className="rounded-md border border-slate-300 bg-white px-4 py-3 text-base outline-none focus:border-emerald-900"
+        className="rounded-md border border-slate-300 bg-white/90 px-4 py-3 text-base outline-none focus:border-[#0b4fd8]"
         defaultValue=""
         name={name}
       >

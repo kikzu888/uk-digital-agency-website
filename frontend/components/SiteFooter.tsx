@@ -5,12 +5,12 @@ import { company, navItems, services } from "@/lib/content";
 
 export function SiteFooter() {
   return (
-    <footer className="bg-slate-950 text-white">
+    <footer className="bg-[#07112f] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <Image
             alt={`${company.name} logo`}
-            className="h-12 w-auto rounded-sm bg-white"
+            className="h-12 w-auto rounded-sm bg-white/90"
             height={84}
             src={company.logo}
             width={300}

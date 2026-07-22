@@ -32,7 +32,7 @@ export default function ServicesPage() {
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
-            <article className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm" key={service.slug}>
+            <article className="overflow-hidden rounded-md border border-slate-200 bg-white/90 shadow-sm" key={service.slug}>
               <Image
                 alt={service.imageAlt}
                 className="h-56 w-full object-cover"
@@ -43,7 +43,7 @@ export default function ServicesPage() {
               <div className="p-6">
                 <h2 className="text-2xl font-semibold text-slate-950">{service.title}</h2>
                 <p className="mt-3 text-slate-600">{service.summary}</p>
-                <Link className="mt-6 inline-flex rounded-md bg-emerald-900 px-4 py-2 font-semibold text-white" href={`/services/${service.slug}`}>
+                <Link className="mt-6 inline-flex rounded-md bg-[#0b4fd8] px-4 py-2 font-semibold text-white" href={`/services/${service.slug}`}>
                   Explore Service
                 </Link>
               </div>

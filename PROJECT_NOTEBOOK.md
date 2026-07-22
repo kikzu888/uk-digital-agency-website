@@ -69,6 +69,8 @@
 - Replaced repeated placeholder featured images in News and Portfolio with distinct professional visuals.
 - Added the supplied VenusCore logo to `frontend/public/brand/` and generated a project favicon at `frontend/app/icon.png`.
 - Replaced the remaining `Company Name` brand placeholders with `VenusCore` across frontend, backend, docs and environment examples.
+- Rebalanced the frontend colour palette around VenusCore navy, blue and sky accents, reducing the previous green-heavy styling.
+- Added a very subtle fixed grid background with light blue radial accents for a more polished technical backdrop.
 
 ### Remaining
 
@@ -107,6 +109,7 @@
 - Added unique service, article and portfolio image metadata to the frontend content model.
 - Replaced malformed article metadata separators with ASCII separators.
 - Cropped the supplied VenusCore logo into full-logo and mark assets without adding new project dependencies.
+- Updated the design documentation palette to reflect the VenusCore brand colours.
 
 ### Commands To Run Later
 

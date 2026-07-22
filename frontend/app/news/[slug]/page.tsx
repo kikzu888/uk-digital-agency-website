@@ -49,10 +49,10 @@ export default async function NewsArticlePage({ params }: NewsArticlePageProps) 
   return (
     <main>
       <article className="mx-auto max-w-4xl px-6 py-20">
-        <Link className="text-sm font-semibold text-emerald-900" href="/news">
+        <Link className="text-sm font-semibold text-[#0b4fd8]" href="/news">
           Back to News
         </Link>
-        <p className="mt-8 text-sm font-semibold uppercase text-emerald-900">{article.category}</p>
+        <p className="mt-8 text-sm font-semibold uppercase text-[#0b4fd8]">{article.category}</p>
         <h1 className="mt-3 text-5xl font-semibold text-slate-950">{article.title}</h1>
         <p className="mt-5 text-lg leading-8 text-slate-600">{article.excerpt}</p>
         <p className="mt-6 text-sm text-slate-500">
@@ -83,8 +83,8 @@ export default async function NewsArticlePage({ params }: NewsArticlePageProps) 
         <h2 className="text-2xl font-semibold text-slate-950">Related articles</h2>
         <div className="mt-6 grid gap-5 md:grid-cols-2">
           {related.map((item) => (
-            <Link className="rounded-md border border-slate-200 bg-white p-5" href={`/news/${item.slug}`} key={item.slug}>
-              <p className="text-sm font-semibold text-emerald-900">{item.category}</p>
+            <Link className="rounded-md border border-slate-200 bg-white/90 p-5" href={`/news/${item.slug}`} key={item.slug}>
+              <p className="text-sm font-semibold text-[#0b4fd8]">{item.category}</p>
               <h3 className="mt-2 font-semibold text-slate-950">{item.title}</h3>
             </Link>
           ))}

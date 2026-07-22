@@ -50,7 +50,7 @@ export function AdminLoginForm() {
         />
       </label>
       <button
-        className="rounded-md bg-emerald-900 px-5 py-3 font-semibold text-white disabled:opacity-60"
+        className="rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white disabled:opacity-60"
         disabled={isSubmitting}
         type="submit"
       >

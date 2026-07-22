@@ -52,11 +52,11 @@ Planned routes:
 ## Design System Direction
 
 - Palette:
-  - Deep Navy: `#102033`
-  - Oxford Blue: `#22324A`
-  - British Racing Green: `#0F4D3F`
-  - Signal Amber: `#F2B84B`
-  - Cloud: `#F7F9FC`
+  - Venus Navy: `#07112F`
+  - Venus Blue: `#0B4FD8`
+  - Orbit Sky: `#36BFFA`
+  - Signal Amber: `#F2B84B` for warnings and placeholder/legal review labels only.
+  - Cloud Blue: `#F6F9FF`
   - Slate: `#5B6675`
 - Fonts:
   - Headings: `Inter`

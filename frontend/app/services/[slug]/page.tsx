@@ -40,11 +40,11 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     <main>
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.85fr_1fr]">
         <div>
-          <p className="text-sm font-semibold uppercase text-emerald-900">Service</p>
+          <p className="text-sm font-semibold uppercase text-[#0b4fd8]">Service</p>
           <h1 className="mt-3 max-w-4xl text-5xl font-semibold text-slate-950">{service.title}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">{service.summary}</p>
           <div className="mt-10">
-            <Link className="rounded-md bg-amber-400 px-5 py-3 font-semibold text-slate-950" href="/contact">
+            <Link className="rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white" href="/contact">
               Request a Quote
             </Link>
           </div>
@@ -59,7 +59,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         />
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white/90">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-16 lg:grid-cols-3">
           <ContentList title="Problems we solve" items={service.problems} />
           <ContentList title="Business benefits" items={service.benefits} />
@@ -71,7 +71,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         <h2 className="text-3xl font-semibold text-slate-950">Frequently asked questions</h2>
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {service.faqs.map((faq) => (
-            <article className="rounded-md border border-slate-200 bg-white p-6" key={faq.question}>
+            <article className="rounded-md border border-slate-200 bg-white/90 p-6" key={faq.question}>
               <h3 className="font-semibold text-slate-950">{faq.question}</h3>
               <p className="mt-3 text-sm leading-6 text-slate-600">{faq.answer}</p>
             </article>
@@ -88,7 +88,7 @@ function ContentList({ items, title }: { items: string[]; title: string }) {
       <h2 className="text-xl font-semibold text-slate-950">{title}</h2>
       <ul className="mt-5 grid gap-3 text-sm leading-6 text-slate-600">
         {items.map((item) => (
-          <li className="border-l-2 border-amber-400 pl-3" key={item}>
+          <li className="border-l-2 border-sky-500 pl-3" key={item}>
             {item}
           </li>
         ))}

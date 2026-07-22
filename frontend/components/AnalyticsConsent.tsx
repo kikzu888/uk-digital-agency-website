@@ -42,7 +42,7 @@ export function AnalyticsConsent() {
         </>
       ) : null}
       {provider !== "none" && consent === "unknown" ? (
-        <div className="fixed bottom-4 left-4 right-4 z-50 mx-auto max-w-3xl rounded-md border border-slate-200 bg-white p-4 shadow-2xl">
+        <div className="fixed bottom-4 left-4 right-4 z-50 mx-auto max-w-3xl rounded-md border border-slate-200 bg-white/90 p-4 shadow-2xl">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <p className="text-sm leading-6 text-slate-700">
               We use optional analytics only with your consent to understand website performance.
@@ -56,7 +56,7 @@ export function AnalyticsConsent() {
                 Decline
               </button>
               <button
-                className="rounded-md bg-emerald-900 px-4 py-2 text-sm font-semibold text-white"
+                className="rounded-md bg-[#0b4fd8] px-4 py-2 text-sm font-semibold text-white"
                 onClick={() => saveConsent("accepted")}
                 type="button"
               >

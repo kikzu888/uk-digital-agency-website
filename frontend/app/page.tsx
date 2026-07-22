@@ -10,10 +10,10 @@ const technologies = ["Next.js", "FastAPI", "PostgreSQL", "AI workflow tools", "
 export default function HomePage() {
   return (
     <main>
-      <section className="bg-white">
+      <section className="bg-white/90">
         <div className="mx-auto grid min-h-[calc(100vh-73px)] max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-[1fr_0.9fr]">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-emerald-900">VenusCore</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-[#0b4fd8]">VenusCore</p>
             <h1 className="max-w-4xl text-5xl font-semibold leading-tight text-slate-950 md:text-7xl">
               Digital operations that help UK businesses grow with confidence.
             </h1>
@@ -21,7 +21,7 @@ export default function HomePage() {
               We combine marketing, websites, automation, CRM and security into clear systems that support growth without adding unnecessary complexity.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link className="rounded-md bg-emerald-900 px-5 py-3 font-semibold text-white" href="/contact">
+              <Link className="rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white" href="/contact">
                 Book a Consultation
               </Link>
               <Link className="rounded-md border border-slate-950 px-5 py-3 font-semibold text-slate-950" href="/services">
@@ -48,7 +48,7 @@ export default function HomePage() {
         />
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <Link className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md" href={`/services/${service.slug}`} key={service.slug}>
+            <Link className="overflow-hidden rounded-md border border-slate-200 bg-white/90 shadow-sm transition hover:-translate-y-1 hover:shadow-md" href={`/services/${service.slug}`} key={service.slug}>
               <Image
                 alt={service.imageAlt}
                 className="h-44 w-full object-cover"
@@ -65,7 +65,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-slate-950 text-white">
+      <section className="bg-[#07112f] text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2">
           <SectionIntro
             eyebrow="Why choose us"
@@ -90,15 +90,15 @@ export default function HomePage() {
         />
         <div className="mt-10 grid gap-4 md:grid-cols-5">
           {processSteps.map((step, index) => (
-            <div className="rounded-md border border-slate-200 bg-white p-5" key={step}>
-              <span className="text-sm font-semibold text-amber-600">0{index + 1}</span>
+            <div className="rounded-md border border-slate-200 bg-white/90 p-5" key={step}>
+              <span className="text-sm font-semibold text-sky-600">0{index + 1}</span>
               <p className="mt-3 font-semibold text-slate-950">{step}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white/90">
         <div className="mx-auto max-w-7xl px-6 py-20">
           <SectionIntro
             eyebrow="Portfolio"
@@ -122,15 +122,15 @@ export default function HomePage() {
             summary="Testimonials are not fabricated. This area is reserved for verified client quotes once approved."
             title="Built for credibility from day one"
           />
-          <div className="mt-8 rounded-md border border-dashed border-slate-300 bg-white p-6 text-slate-600">
+          <div className="mt-8 rounded-md border border-dashed border-slate-300 bg-white/90 p-6 text-slate-600">
             Verified testimonial placeholder.
           </div>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase text-emerald-900">Technology</p>
+          <p className="text-sm font-semibold uppercase text-[#0b4fd8]">Technology</p>
           <div className="mt-5 flex flex-wrap gap-3">
             {technologies.map((technology) => (
-              <span className="rounded-md border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700" key={technology}>
+              <span className="rounded-md border border-slate-200 bg-white/90 px-4 py-2 text-sm font-semibold text-slate-700" key={technology}>
                 {technology}
               </span>
             ))}
@@ -138,7 +138,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white/90">
         <div className="mx-auto max-w-7xl px-6 py-20">
           <SectionIntro
             eyebrow="FAQ"
@@ -163,13 +163,13 @@ export default function HomePage() {
 
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[0.8fr_1fr]">
         <div>
-          <p className="text-sm font-semibold uppercase text-emerald-900">Consultation</p>
+          <p className="text-sm font-semibold uppercase text-[#0b4fd8]">Consultation</p>
           <h2 className="mt-3 text-3xl font-semibold text-slate-950 md:text-4xl">Discuss the next practical step for your business.</h2>
           <p className="mt-4 text-lg leading-8 text-slate-600">
             Tell us what you are trying to improve and which systems are already in place.
           </p>
         </div>
-        <div className="rounded-md border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="rounded-md border border-slate-200 bg-white/90 p-6 shadow-sm">
           <ContactForm />
         </div>
       </section>

@@ -35,13 +35,13 @@ export default function AboutPage() {
             ["Responsible delivery", "Security, accessibility, privacy and maintainability are treated as core requirements."],
             ["Room to grow", "The platform is planned so new service areas, locations, articles and case studies can be added cleanly."],
           ].map(([title, text]) => (
-            <article className="rounded-md border border-slate-200 bg-white p-6" key={title}>
+            <article className="rounded-md border border-slate-200 bg-white/90 p-6" key={title}>
               <h2 className="text-xl font-semibold text-slate-950">{title}</h2>
               <p className="mt-3 text-sm leading-6 text-slate-600">{text}</p>
             </article>
           ))}
         </div>
-        <div className="mt-12 rounded-md bg-slate-950 p-8 text-white">
+        <div className="mt-12 rounded-md bg-[#07112f] p-8 text-white">
           <p className="text-sm text-slate-300">{company.name}</p>
           <h2 className="mt-3 text-2xl font-semibold">Placeholder business details</h2>
           <p className="mt-3 text-slate-300">

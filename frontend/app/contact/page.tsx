@@ -44,7 +44,7 @@ export default function ContactPage() {
             width={1100}
           />
         </div>
-        <div className="rounded-md border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="rounded-md border border-slate-200 bg-white/90 p-6 shadow-sm">
           <ContactForm />
         </div>
       </section>

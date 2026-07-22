@@ -22,7 +22,7 @@ export default function PortfolioPage() {
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {portfolioProjects.map((project) => (
-            <article className="rounded-md border border-slate-200 bg-white shadow-sm" key={project.slug}>
+            <article className="rounded-md border border-slate-200 bg-white/90 shadow-sm" key={project.slug}>
               <Image
                 alt={project.imageAlt}
                 className="h-64 w-full rounded-t-md object-cover"
@@ -43,7 +43,7 @@ export default function PortfolioPage() {
                     </span>
                   ))}
                 </div>
-                <Link className="mt-6 inline-flex rounded-md bg-emerald-900 px-4 py-2 font-semibold text-white" href={`/portfolio/${project.slug}`}>
+                <Link className="mt-6 inline-flex rounded-md bg-[#0b4fd8] px-4 py-2 font-semibold text-white" href={`/portfolio/${project.slug}`}>
                   View Case Study
                 </Link>
               </div>

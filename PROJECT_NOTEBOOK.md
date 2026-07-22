@@ -63,6 +63,10 @@
 - Pushed the full project source to GitHub on the `main` branch.
 - Fixed GitHub Actions failures by synchronising the frontend lockfile, upgrading Next.js, adding npm dependency overrides for audited `postcss` and `sharp` versions, and replacing `python-jose` with `PyJWT[crypto]`.
 - Fixed the GitHub Actions frontend `npm ci` lockfile drift by pinning `@emnapi/core` and `@emnapi/runtime` as explicit dev dependencies.
+- Generated a professional branded website image set for Home, Services, service detail pages, About, Contact, News and Portfolio.
+- Added project-local image assets under `frontend/public/images/`.
+- Connected generated assets through Next.js `Image` components with page-specific alt text.
+- Replaced repeated placeholder featured images in News and Portfolio with distinct professional visuals.
 
 ### Remaining
 
@@ -98,6 +102,8 @@
 - Updated the default development `SECRET_KEY` placeholder length to satisfy HS256 key-length guidance.
 - Upgraded frontend to Next.js `16.2.11` and added npm overrides for `postcss` `^8.5.22` and `sharp` `^0.35.3`.
 - Added explicit frontend dev dependencies for `@emnapi/core` and `@emnapi/runtime` to keep `npm ci` deterministic on Linux runners.
+- Added unique service, article and portfolio image metadata to the frontend content model.
+- Replaced malformed article metadata separators with ASCII separators.
 
 ### Commands To Run Later
 

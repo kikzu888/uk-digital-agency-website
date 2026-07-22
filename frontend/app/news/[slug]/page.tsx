@@ -56,10 +56,10 @@ export default async function NewsArticlePage({ params }: NewsArticlePageProps) 
         <h1 className="mt-3 text-5xl font-semibold text-slate-950">{article.title}</h1>
         <p className="mt-5 text-lg leading-8 text-slate-600">{article.excerpt}</p>
         <p className="mt-6 text-sm text-slate-500">
-          By {article.author} · Published {article.publishedAt} · Updated {article.updatedAt}
+          By {article.author} | Published {article.publishedAt} | Updated {article.updatedAt}
         </p>
         <Image
-          alt={`Placeholder featured image for ${article.title}`}
+          alt={article.featuredImageAlt}
           className="mt-10 rounded-md object-cover"
           height={700}
           priority

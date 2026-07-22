@@ -24,7 +24,7 @@ export default function PortfolioPage() {
           {portfolioProjects.map((project) => (
             <article className="rounded-md border border-slate-200 bg-white shadow-sm" key={project.slug}>
               <Image
-                alt={`Placeholder project image for ${project.title}`}
+                alt={project.imageAlt}
                 className="h-64 w-full rounded-t-md object-cover"
                 height={600}
                 src={project.images[0]}

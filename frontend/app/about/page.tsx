@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import { SectionIntro } from "@/components/SectionIntro";
 import { company } from "@/lib/content";
@@ -13,11 +14,21 @@ export default function AboutPage() {
   return (
     <main>
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <SectionIntro
-          eyebrow="About"
-          summary="Company Name is being structured as a practical digital partner for UK SMEs that need dependable marketing, web, automation, CRM and security support."
-          title="Digital delivery with commercial focus"
-        />
+        <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1fr]">
+          <SectionIntro
+            eyebrow="About"
+            summary="Company Name is being structured as a practical digital partner for UK SMEs that need dependable marketing, web, automation, CRM and security support."
+            title="Digital delivery with commercial focus"
+          />
+          <Image
+            alt="Collaborative digital roadmap workshop with business technology planning materials"
+            className="h-auto rounded-md object-cover shadow-xl"
+            height={700}
+            priority
+            src="/images/about-workshop.png"
+            width={1100}
+          />
+        </div>
         <div className="mt-12 grid gap-8 lg:grid-cols-3">
           {[
             ["Practical strategy", "We start with the business problem and choose technology only when it improves the outcome."],

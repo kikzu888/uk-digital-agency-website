@@ -34,7 +34,7 @@ export default function HomePage() {
             className="h-auto rounded-md object-cover shadow-2xl"
             height={900}
             priority
-            src="/images/digital-agency-hero.png"
+            src="/images/home-hero.png"
             width={1200}
           />
         </div>
@@ -48,9 +48,18 @@ export default function HomePage() {
         />
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <Link className="rounded-md border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md" href={`/services/${service.slug}`} key={service.slug}>
-              <h3 className="text-xl font-semibold text-slate-950">{service.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">{service.summary}</p>
+            <Link className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md" href={`/services/${service.slug}`} key={service.slug}>
+              <Image
+                alt={service.imageAlt}
+                className="h-44 w-full object-cover"
+                height={360}
+                src={service.image}
+                width={640}
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-slate-950">{service.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{service.summary}</p>
+              </div>
             </Link>
           ))}
         </div>

@@ -22,6 +22,9 @@ export const services = [
     title: "Digital Marketing",
     summary:
       "Focused campaigns, search visibility and conversion improvements for UK companies that need measurable growth.",
+    image: "/images/service-digital-marketing.png",
+    imageAlt:
+      "Marketing strategist reviewing abstract campaign analytics and conversion dashboards for a UK business",
     problems: [
       "Low-quality enquiries from paid or organic channels",
       "Unclear marketing attribution",
@@ -49,6 +52,9 @@ export const services = [
     title: "Web Development",
     summary:
       "Fast, secure and SEO-ready websites built around clear business goals and practical content management.",
+    image: "/images/service-web-development.png",
+    imageAlt:
+      "Responsive website layouts shown across desktop, tablet and mobile devices in a development workspace",
     problems: [
       "Slow or outdated websites",
       "Poor mobile experience",
@@ -76,6 +82,9 @@ export const services = [
     title: "AI Automation Processes",
     summary:
       "Practical automation for repetitive business workflows, using AI where it creates real operational value.",
+    image: "/images/service-ai-automation.png",
+    imageAlt:
+      "Business automation workflow dashboard with connected approval steps and AI-assisted process cards",
     problems: [
       "Manual admin slowing down teams",
       "Repeated data entry across tools",
@@ -103,6 +112,9 @@ export const services = [
     title: "CRM Solutions",
     summary:
       "CRM setup, improvement and automation that helps teams manage leads, customers and follow-up clearly.",
+    image: "/images/service-crm-solutions.png",
+    imageAlt:
+      "CRM pipeline dashboard and customer follow-up interface on a business laptop",
     problems: [
       "Leads lost in spreadsheets or inboxes",
       "No clear sales pipeline",
@@ -130,6 +142,9 @@ export const services = [
     title: "Cybersecurity Services",
     summary:
       "Baseline security improvements for websites, cloud systems and business processes, designed for SMEs.",
+    image: "/images/service-cybersecurity.png",
+    imageAlt:
+      "Cybersecurity monitoring dashboard showing abstract access control and risk indicators",
     problems: [
       "Weak website and account security",
       "Unclear data protection processes",
@@ -183,7 +198,9 @@ export const newsArticles = [
     publishedAt: "2026-07-01",
     updatedAt: "2026-07-15",
     category: "Digital Marketing",
-    featuredImage: "/images/digital-agency-hero.png",
+    featuredImage: "/images/news-digital-roadmap.png",
+    featuredImageAlt:
+      "Digital roadmap planning workspace with abstract milestones for websites, CRM, automation and security",
     status: "published",
   },
   {
@@ -195,7 +212,9 @@ export const newsArticles = [
     publishedAt: "2026-07-05",
     updatedAt: "2026-07-15",
     category: "Web Development",
-    featuredImage: "/images/digital-agency-hero.png",
+    featuredImage: "/images/news-website-rebuild.png",
+    featuredImageAlt:
+      "Website rebuild planning workspace with abstract wireframes, accessibility checks and SEO structure",
     status: "published",
   },
   {
@@ -207,7 +226,9 @@ export const newsArticles = [
     publishedAt: "2026-07-08",
     updatedAt: "2026-07-15",
     category: "Artificial Intelligence",
-    featuredImage: "/images/digital-agency-hero.png",
+    featuredImage: "/images/service-ai-automation.png",
+    featuredImageAlt:
+      "AI automation workflow dashboard with connected process steps for a service business",
     status: "published",
   },
 ];
@@ -222,7 +243,9 @@ export const portfolioProjects = [
     solution: "Placeholder solution describing the proposed technical and operational approach.",
     technologies: ["Next.js", "FastAPI", "PostgreSQL", "CRM integration"],
     results: ["Placeholder result format only", "No real client statistics claimed"],
-    images: ["/images/digital-agency-hero.png"],
+    images: ["/images/portfolio-crm-workflow.png"],
+    imageAlt:
+      "Placeholder case study visual showing a website enquiry flow connected to a generic CRM pipeline",
     category: "Web Development",
     isPlaceholder: true,
   },
@@ -235,7 +258,9 @@ export const portfolioProjects = [
     solution: "Placeholder automation roadmap and governance approach.",
     technologies: ["AI workflow tools", "API integration", "Secure process design"],
     results: ["Placeholder outcome only", "Requires replacement with verified client-approved results"],
-    images: ["/images/digital-agency-hero.png"],
+    images: ["/images/portfolio-automation-discovery.png"],
+    imageAlt:
+      "Placeholder automation discovery visual showing generic workflow mapping and integration planning",
     category: "AI Automation",
     isPlaceholder: true,
   },

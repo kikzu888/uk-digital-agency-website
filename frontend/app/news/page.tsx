@@ -63,7 +63,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
           {items.map((article) => (
             <article className="rounded-md border border-slate-200 bg-white shadow-sm" key={article.slug}>
               <Image
-                alt={`Placeholder featured image for ${article.title}`}
+                alt={article.featuredImageAlt}
                 className="h-48 w-full rounded-t-md object-cover"
                 height={500}
                 src={article.featuredImage}
@@ -76,7 +76,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
                 </h2>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{article.excerpt}</p>
                 <p className="mt-5 text-xs text-slate-500">
-                  By {article.author} · Published {article.publishedAt} · Updated {article.updatedAt}
+                  By {article.author} | Published {article.publishedAt} | Updated {article.updatedAt}
                 </p>
               </div>
             </article>

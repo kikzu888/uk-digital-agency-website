@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import { ContactForm } from "@/components/ContactForm";
 import { SectionIntro } from "@/components/SectionIntro";
@@ -34,6 +35,14 @@ export default function ContactPage() {
               <dd className="mt-1">{company.address}</dd>
             </div>
           </dl>
+          <Image
+            alt="Consultation desk with abstract enquiry dashboard and project planning notes"
+            className="mt-10 h-auto rounded-md object-cover shadow-xl"
+            height={700}
+            priority
+            src="/images/contact-consultation.png"
+            width={1100}
+          />
         </div>
         <div className="rounded-md border border-slate-200 bg-white p-6 shadow-sm">
           <ContactForm />

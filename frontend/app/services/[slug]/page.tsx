@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -37,15 +38,25 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
   return (
     <main>
-      <section className="mx-auto max-w-7xl px-6 py-20">
-        <p className="text-sm font-semibold uppercase text-emerald-900">Service</p>
-        <h1 className="mt-3 max-w-4xl text-5xl font-semibold text-slate-950">{service.title}</h1>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">{service.summary}</p>
-        <div className="mt-10">
-          <Link className="rounded-md bg-amber-400 px-5 py-3 font-semibold text-slate-950" href="/contact">
-            Request a Quote
-          </Link>
+      <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.85fr_1fr]">
+        <div>
+          <p className="text-sm font-semibold uppercase text-emerald-900">Service</p>
+          <h1 className="mt-3 max-w-4xl text-5xl font-semibold text-slate-950">{service.title}</h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">{service.summary}</p>
+          <div className="mt-10">
+            <Link className="rounded-md bg-amber-400 px-5 py-3 font-semibold text-slate-950" href="/contact">
+              Request a Quote
+            </Link>
+          </div>
         </div>
+        <Image
+          alt={service.imageAlt}
+          className="h-auto rounded-md object-cover shadow-xl"
+          height={700}
+          priority
+          src={service.image}
+          width={1100}
+        />
       </section>
 
       <section className="bg-white">

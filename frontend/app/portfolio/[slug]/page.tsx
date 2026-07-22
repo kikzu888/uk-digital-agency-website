@@ -48,7 +48,7 @@ export default async function PortfolioProjectPage({ params }: PortfolioProjectP
         <h1 className="mt-3 text-5xl font-semibold text-slate-950">{project.title}</h1>
         <p className="mt-5 text-lg leading-8 text-slate-600">{project.shortDescription}</p>
         <Image
-          alt={`Placeholder project image for ${project.title}`}
+          alt={project.imageAlt}
           className="mt-10 rounded-md object-cover"
           height={700}
           priority

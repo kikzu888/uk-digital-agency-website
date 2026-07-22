@@ -18,6 +18,8 @@
     "zod": "^3.25.0"
   },
   "devDependencies": {
+    "@emnapi/core": "^1.11.2",
+    "@emnapi/runtime": "^1.11.2",
     "@eslint/eslintrc": "^3.3.0",
     "@playwright/test": "^1.56.1",
     "@tailwindcss/postcss": "^4.1.0",

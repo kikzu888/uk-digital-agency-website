@@ -62,6 +62,7 @@
 - Created the private GitHub repository `kikzu888/uk-digital-agency-website`.
 - Pushed the full project source to GitHub on the `main` branch.
 - Fixed GitHub Actions failures by synchronising the frontend lockfile, upgrading Next.js, adding npm dependency overrides for audited `postcss` and `sharp` versions, and replacing `python-jose` with `PyJWT[crypto]`.
+- Fixed the GitHub Actions frontend `npm ci` lockfile drift by pinning `@emnapi/core` and `@emnapi/runtime` as explicit dev dependencies.
 
 ### Remaining
 
@@ -79,6 +80,7 @@
 - GitHub Actions initially failed because `frontend/package-lock.json` was out of sync with `package.json`.
 - GitHub Actions initially failed because `python-jose` pulled in the vulnerable `ecdsa` package.
 - NPM audit reported unresolved advisories through Next.js transitive `postcss` and `sharp` versions.
+- GitHub Actions frontend install also required explicit `@emnapi` lockfile entries for Linux optional WebAssembly packages.
 
 ### Fixes Applied
 
@@ -95,6 +97,7 @@
 - Replaced backend JWT handling with `PyJWT[crypto]`.
 - Updated the default development `SECRET_KEY` placeholder length to satisfy HS256 key-length guidance.
 - Upgraded frontend to Next.js `16.2.11` and added npm overrides for `postcss` `^8.5.22` and `sharp` `^0.35.3`.
+- Added explicit frontend dev dependencies for `@emnapi/core` and `@emnapi/runtime` to keep `npm ci` deterministic on Linux runners.
 
 ### Commands To Run Later
 

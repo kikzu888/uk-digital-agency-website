@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
-  description: "Cookie Policy template for Company Name. Requires legal review.",
+  description: "Cookie Policy template for VenusCore. Requires legal review.",
   alternates: { canonical: "/cookie-policy" },
 };
 

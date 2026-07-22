@@ -15,7 +15,7 @@ export default function AdminLoginPage() {
         Back to website
       </Link>
       <div className="rounded-md border border-slate-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase text-emerald-900">Company Name</p>
+        <p className="text-sm font-semibold uppercase text-emerald-900">VenusCore</p>
         <h1 className="mt-2 text-3xl font-semibold text-slate-950">Admin Login</h1>
         <p className="mt-3 text-sm leading-6 text-slate-600">
           Sign in with configured admin credentials. Open registration is disabled.

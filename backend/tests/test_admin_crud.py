@@ -66,7 +66,7 @@ def test_admin_news_crud(monkeypatch) -> None:  # type: ignore[no-untyped-def]
             "slug": slug,
             "excerpt": "Placeholder excerpt for admin-created article.",
             "body": "Placeholder body for admin-created article.",
-            "author": "Company Name Editorial",
+            "author": "VenusCore Editorial",
             "category_slug": "web-development",
             "status": "draft",
         },

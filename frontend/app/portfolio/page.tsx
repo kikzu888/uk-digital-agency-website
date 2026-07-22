@@ -7,7 +7,7 @@ import { portfolioProjects } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Placeholder project catalogue and case study structure for Company Name.",
+  description: "Placeholder project catalogue and case study structure for VenusCore.",
   alternates: { canonical: "/portfolio" },
 };
 

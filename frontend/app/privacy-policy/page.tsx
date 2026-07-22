@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy Policy template for Company Name. Requires legal review.",
+  description: "Privacy Policy template for VenusCore. Requires legal review.",
   alternates: { canonical: "/privacy-policy" },
 };
 
@@ -19,7 +19,7 @@ function PolicyPage({ title }: { title: string }) {
         This is a template for a UK business website and is not legal advice. It must be reviewed by a qualified legal professional before publication.
       </p>
       <section className="mt-10 grid gap-6 text-slate-700">
-        <p>Company Name will collect only the information needed to respond to enquiries and provide requested services.</p>
+        <p>VenusCore will collect only the information needed to respond to enquiries and provide requested services.</p>
         <p>Contact form data may include name, company, email, phone, service interest, budget range, project description and consent records.</p>
         <p>Marketing consent is optional and should be recorded separately from service enquiry consent.</p>
       </section>

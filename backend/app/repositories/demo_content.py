@@ -171,7 +171,7 @@ news_seed = [
             "This placeholder article outlines a staged roadmap for UK SMEs. It is demo "
             "content for structure, SEO metadata and editorial workflow validation."
         ),
-        author="Company Name Editorial",
+        author="VenusCore Editorial",
         published_at=_published,
         revised_at=_revised,
         category=categories_seed[0],
@@ -187,7 +187,7 @@ news_seed = [
             "This placeholder article covers goals, content, analytics, redirects, "
             "accessibility, performance and maintainability."
         ),
-        author="Company Name Editorial",
+        author="VenusCore Editorial",
         published_at=datetime(2026, 7, 5, 9, 0, tzinfo=UTC),
         revised_at=_revised,
         category=categories_seed[1],
@@ -203,7 +203,7 @@ news_seed = [
             "This placeholder article explains how to assess repeatability, risk, data access "
             "and human review before adding AI automation."
         ),
-        author="Company Name Editorial",
+        author="VenusCore Editorial",
         published_at=datetime(2026, 7, 8, 9, 0, tzinfo=UTC),
         revised_at=_revised,
         category=categories_seed[2],

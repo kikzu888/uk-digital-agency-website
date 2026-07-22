@@ -61,8 +61,8 @@ Planned routes:
 - Fonts:
   - Headings: `Inter`
   - Body: `Source Sans 3`
-- Temporary logo: text-based `Company Name`
-- Favicon placeholder: initials-based mark, `CN`
+- Logo: project-local `VenusCore` logo under `frontend/public/brand/`.
+- Favicon: project-local `VenusCore` mark under `frontend/app/icon.png`.
 
 ## Database Model Plan
 

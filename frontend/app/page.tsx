@@ -13,7 +13,7 @@ export default function HomePage() {
       <section className="bg-white">
         <div className="mx-auto grid min-h-[calc(100vh-73px)] max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-[1fr_0.9fr]">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-emerald-900">Company Name</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-emerald-900">VenusCore</p>
             <h1 className="max-w-4xl text-5xl font-semibold leading-tight text-slate-950 md:text-7xl">
               Digital operations that help UK businesses grow with confidence.
             </h1>

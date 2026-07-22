@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME ?? "Company Name";
+const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME ?? "VenusCore";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

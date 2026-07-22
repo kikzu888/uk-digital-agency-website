@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { company, navItems, services } from "@/lib/content";
@@ -7,7 +8,13 @@ export function SiteFooter() {
     <footer className="bg-slate-950 text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
-          <p className="text-lg font-semibold">{company.name}</p>
+          <Image
+            alt={`${company.name} logo`}
+            className="h-12 w-auto rounded-sm bg-white"
+            height={84}
+            src={company.logo}
+            width={300}
+          />
           <p className="mt-4 max-w-sm text-sm leading-6 text-slate-300">
             Digital marketing, web development, AI automation, CRM and cybersecurity services for UK businesses.
           </p>
@@ -43,7 +50,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-white/10 px-6 py-5 text-center text-xs text-slate-400">
-        © 2026 {company.name}. Policy templates require legal review before publication.
+        (c) 2026 {company.name}. Policy templates require legal review before publication.
       </div>
     </footer>
   );

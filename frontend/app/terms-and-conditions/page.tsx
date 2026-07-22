@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions",
-  description: "Terms and Conditions template for Company Name. Requires legal review.",
+  description: "Terms and Conditions template for VenusCore. Requires legal review.",
   alternates: { canonical: "/terms-and-conditions" },
 };
 

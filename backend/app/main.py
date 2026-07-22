@@ -8,7 +8,7 @@ from app.core.security_headers import SecurityHeadersMiddleware
 
 def create_app() -> FastAPI:
     app = FastAPI(
-        title="Company Name API",
+        title="VenusCore API",
         version="0.1.0",
         description="REST API for a UK digital agency website.",
         docs_url="/docs" if settings.enable_api_docs else None,

@@ -19,8 +19,8 @@ GoDaddy can be used as a registrar, but it should not be assumed to be the best 
 
 Current placeholders:
 
-- Company Name
-- Company Logo
+- VenusCore
+- VenusCore logo
 - UK Phone Number
 - Business Email
 - UK Business Address

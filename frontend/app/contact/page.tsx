@@ -7,7 +7,7 @@ import { company } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Company Name to discuss a UK digital marketing, website, automation, CRM or cybersecurity project.",
+  description: "Contact VenusCore to discuss a UK digital marketing, website, automation, CRM or cybersecurity project.",
   alternates: { canonical: "/contact" },
 };
 

@@ -6,7 +6,7 @@ import { company } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Company Name, a UK-focused digital agency for growth, automation and security.",
+  description: "About VenusCore, a UK-focused digital agency for growth, automation and security.",
   alternates: { canonical: "/about" },
 };
 
@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1fr]">
           <SectionIntro
             eyebrow="About"
-            summary="Company Name is being structured as a practical digital partner for UK SMEs that need dependable marketing, web, automation, CRM and security support."
+            summary="VenusCore is being structured as a practical digital partner for UK SMEs that need dependable marketing, web, automation, CRM and security support."
             title="Digital delivery with commercial focus"
           />
           <Image
@@ -42,7 +42,7 @@ export default function AboutPage() {
           ))}
         </div>
         <div className="mt-12 rounded-md bg-slate-950 p-8 text-white">
-          <p className="text-sm text-slate-300">{company.logo}</p>
+          <p className="text-sm text-slate-300">{company.name}</p>
           <h2 className="mt-3 text-2xl font-semibold">Placeholder business details</h2>
           <p className="mt-3 text-slate-300">
             UK Phone Number, Business Email, UK Business Address and Company Registration Number will be replaced once verified details are provided.

@@ -1,4 +1,4 @@
-# Company Name Digital Agency Website
+# VenusCore Digital Agency Website
 
 Production-ready monorepo for a UK-focused digital agency website.
 

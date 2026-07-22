@@ -67,6 +67,8 @@
 - Added project-local image assets under `frontend/public/images/`.
 - Connected generated assets through Next.js `Image` components with page-specific alt text.
 - Replaced repeated placeholder featured images in News and Portfolio with distinct professional visuals.
+- Added the supplied VenusCore logo to `frontend/public/brand/` and generated a project favicon at `frontend/app/icon.png`.
+- Replaced the remaining `Company Name` brand placeholders with `VenusCore` across frontend, backend, docs and environment examples.
 
 ### Remaining
 
@@ -104,6 +106,7 @@
 - Added explicit frontend dev dependencies for `@emnapi/core` and `@emnapi/runtime` to keep `npm ci` deterministic on Linux runners.
 - Added unique service, article and portfolio image metadata to the frontend content model.
 - Replaced malformed article metadata separators with ASCII separators.
+- Cropped the supplied VenusCore logo into full-logo and mark assets without adding new project dependencies.
 
 ### Commands To Run Later
 

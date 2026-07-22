@@ -100,7 +100,7 @@ async def send_contact_notifications(submission: ContactSubmissionPublic) -> Non
             to=str(submission.email),
             subject="We received your enquiry",
             text=(
-                "Thank you for contacting Company Name. "
+                "Thank you for contacting VenusCore. "
                 f"Your enquiry reference is CONTACT-{submission.id}."
             ),
         )

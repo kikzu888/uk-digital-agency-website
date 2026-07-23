@@ -110,6 +110,8 @@
 - Replaced malformed article metadata separators with ASCII separators.
 - Cropped the supplied VenusCore logo into full-logo and mark assets without adding new project dependencies.
 - Updated the design documentation palette to reflect the VenusCore brand colours.
+- Converted the VenusCore full logo and mark PNG assets to real transparent-background images.
+- Removed the footer logo's white backing panel so it stays clean on the dark footer during scroll.
 
 ### Commands To Run Later
 

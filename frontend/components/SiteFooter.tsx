@@ -10,7 +10,7 @@ export function SiteFooter() {
         <div>
           <Image
             alt={`${company.name} logo`}
-            className="h-12 w-auto rounded-sm bg-white/90"
+            className="h-12 w-auto brightness-0 invert"
             height={84}
             src={company.logo}
             width={300}

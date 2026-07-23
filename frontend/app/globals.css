@@ -38,3 +38,146 @@ a {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
+
+.hero-network::before,
+.hero-network::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+}
+
+.hero-network::before {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(54, 191, 250, 0.26), transparent 18rem),
+    radial-gradient(circle at 82% 18%, rgba(11, 79, 216, 0.2), transparent 20rem),
+    radial-gradient(circle at 62% 86%, rgba(54, 191, 250, 0.12), transparent 18rem);
+  animation: heroGlow 16s ease-in-out infinite alternate;
+}
+
+.hero-network::after {
+  background:
+    linear-gradient(120deg, transparent 0 44%, rgba(54, 191, 250, 0.12) 45%, transparent 46% 100%),
+    linear-gradient(145deg, transparent 0 60%, rgba(255, 255, 255, 0.08) 61%, transparent 62% 100%),
+    linear-gradient(35deg, transparent 0 68%, rgba(11, 79, 216, 0.16) 69%, transparent 70% 100%);
+  opacity: 0.75;
+  animation: networkDrift 22s linear infinite;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at 62% 42%, black, transparent 72%);
+  opacity: 0.5;
+}
+
+.hero-orbit {
+  position: absolute;
+  border: 1px solid rgba(54, 191, 250, 0.2);
+  border-radius: 999px;
+  box-shadow: 0 0 48px rgba(54, 191, 250, 0.08);
+  pointer-events: none;
+}
+
+.hero-orbit-one {
+  right: -8rem;
+  top: 7rem;
+  height: 28rem;
+  width: 28rem;
+  animation: orbitFloat 18s ease-in-out infinite;
+}
+
+.hero-orbit-two {
+  bottom: -12rem;
+  left: 42%;
+  height: 34rem;
+  width: 34rem;
+  animation: orbitFloat 24s ease-in-out infinite reverse;
+}
+
+.hero-pulse {
+  position: absolute;
+  height: 0.55rem;
+  width: 0.55rem;
+  border-radius: 999px;
+  background: #36bffa;
+  box-shadow: 0 0 0 10px rgba(54, 191, 250, 0.08), 0 0 32px rgba(54, 191, 250, 0.8);
+  pointer-events: none;
+}
+
+.hero-pulse-one {
+  left: 52%;
+  top: 24%;
+  animation: pulseRouteOne 12s ease-in-out infinite;
+}
+
+.hero-pulse-two {
+  right: 16%;
+  bottom: 28%;
+  animation: pulseRouteTwo 15s ease-in-out infinite;
+}
+
+@keyframes heroGlow {
+  from {
+    transform: translate3d(-2%, -1%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(2%, 1%, 0) scale(1.05);
+  }
+}
+
+@keyframes networkDrift {
+  from {
+    transform: translate3d(-4rem, 0, 0);
+  }
+  to {
+    transform: translate3d(4rem, 0, 0);
+  }
+}
+
+@keyframes orbitFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-1.5rem, 1rem, 0) scale(1.04);
+  }
+}
+
+@keyframes pulseRouteOne {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.35;
+  }
+  45% {
+    transform: translate3d(8rem, 5rem, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseRouteTwo {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate3d(-9rem, -4rem, 0);
+    opacity: 0.95;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-network::before,
+  .hero-network::after,
+  .hero-orbit,
+  .hero-pulse {
+    animation: none;
+  }
+}

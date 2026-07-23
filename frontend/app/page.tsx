@@ -10,28 +10,33 @@ const technologies = ["Next.js", "FastAPI", "PostgreSQL", "AI workflow tools", "
 export default function HomePage() {
   return (
     <main>
-      <section className="bg-white/90">
+      <section className="hero-network relative isolate overflow-hidden bg-[#050b24] text-white">
+        <div className="hero-grid" aria-hidden="true" />
+        <div className="hero-orbit hero-orbit-one" aria-hidden="true" />
+        <div className="hero-orbit hero-orbit-two" aria-hidden="true" />
+        <div className="hero-pulse hero-pulse-one" aria-hidden="true" />
+        <div className="hero-pulse hero-pulse-two" aria-hidden="true" />
         <div className="mx-auto grid min-h-[calc(100vh-73px)] max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-[1fr_0.9fr]">
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-[#0b4fd8]">VenusCore</p>
-            <h1 className="max-w-4xl text-5xl font-semibold leading-tight text-slate-950 md:text-7xl">
+          <div className="relative z-10">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-sky-300">VenusCore</p>
+            <h1 className="max-w-4xl text-5xl font-semibold leading-tight text-white md:text-7xl">
               Digital operations that help UK businesses grow with confidence.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
               We combine marketing, websites, automation, CRM and security into clear systems that support growth without adding unnecessary complexity.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link className="rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white" href="/contact">
+              <Link className="rounded-md bg-sky-400 px-5 py-3 font-semibold text-[#07112f] shadow-lg shadow-sky-500/20" href="/contact">
                 Book a Consultation
               </Link>
-              <Link className="rounded-md border border-slate-950 px-5 py-3 font-semibold text-slate-950" href="/services">
+              <Link className="rounded-md border border-white/30 px-5 py-3 font-semibold text-white hover:border-sky-300" href="/services">
                 View Services
               </Link>
             </div>
           </div>
           <Image
             alt="UK business team reviewing digital systems and secure automation dashboards"
-            className="h-auto rounded-md object-cover shadow-2xl"
+            className="relative z-10 h-auto rounded-md border border-white/10 object-cover shadow-2xl shadow-blue-950/60"
             height={900}
             priority
             src="/images/home-hero.png"

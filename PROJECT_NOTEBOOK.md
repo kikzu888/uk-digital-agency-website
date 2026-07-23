@@ -112,6 +112,7 @@
 - Updated the design documentation palette to reflect the VenusCore brand colours.
 - Converted the VenusCore full logo and mark PNG assets to real transparent-background images.
 - Removed the footer logo's white backing panel so it stays clean on the dark footer during scroll.
+- Replaced the VenusCore brand assets with the latest supplied logo file and regenerated the mark/favicon as transparent PNG files.
 
 ### Commands To Run Later
 

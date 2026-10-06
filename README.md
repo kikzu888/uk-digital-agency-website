@@ -1,6 +1,11 @@
 # VenusCore Digital Agency Website
 
-Production-ready monorepo for a UK-focused digital agency website.
+Monorepo for a UK-focused digital agency website.
+
+**Safe continuation:** start with [the isolated development guide](docs/safe-development.md)
+and [the Vercel recovery report](docs/vercel-recovery.md). Work on `sync/*` or
+`work/*` branches; do not merge this recovery into `main` or deploy before the
+release checks in that guide are complete.
 
 ## Planned Stack
 

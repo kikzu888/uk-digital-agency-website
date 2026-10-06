@@ -84,7 +84,9 @@ The recovered frontend lockfile currently reports 14 advisories (3 moderate,
 separate from dependency remediation: update supported packages on a `work/*`
 branch, rerun all checks, and resolve the audit before any preview or production
 release. Do not use `npm audit fix --force` without reviewing its version changes.
-The audit step in CI remains enabled and is expected to block this baseline.
+The audit step in CI remains enabled and fails on this baseline. Required GitHub
+branch checks were not configured, so this failure is not an automatic merge
+restriction; keep the release on hold until it is resolved.
 
 1. Prepare separate preview projects with Root Directory `frontend` and
    `backend`. The existing production projects were observed with both roots

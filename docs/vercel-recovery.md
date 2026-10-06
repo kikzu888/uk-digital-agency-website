@@ -80,13 +80,26 @@ See [safe development](safe-development.md) for commands and the release boundar
 | Recovered dependency list / Vercel entrypoint | Consistent |
 | Git bundle integrity | Complete history verified |
 | Local push guard | Production branch rejected; recovery branch permitted |
-| Backend Ruff on this Windows host | Blocked by Windows Application Control; CI must verify |
+| Backend Ruff | Passed in Linux CI; blocked by Windows Application Control locally |
+| Backend dependency audit | Passed in Linux CI |
 | Frontend dependency audit | Failed: 3 moderate, 10 high, 1 critical advisory |
 
 The existing Next.js version is included in the critical audit result. Dependency
 remediation on a separate work branch and passing CI are prerequisites to a
 release. No automatic dependency fix, major version change, or production update
 was performed as part of source recovery.
+
+[GitHub CI run 37531279314](https://github.com/kikzu888/uk-digital-agency-website/actions/runs/37531279314)
+completed for recovery commit `6dd775718be60d8806b4555cbc956a4e069cf36d`.
+The backend job passed in full. Frontend lint, type check, unit tests, browser
+tests and build passed; only `NPM audit` failed. Failed CI is a release
+prerequisite to resolve, not an enforced merge restriction: GitHub required
+checks/branch protection were not configured by this work.
+
+After pushing the recovery branch, remote `main` still pointed to `b8d78a6`.
+Both Vercel project overviews still showed their original Ready production
+deployments listed above and “No Active Branches”. No new deployment was created
+for the recovery branch.
 
 Local Python testing used Python 3.12.14 and the currently resolved declared
 dependencies. Windows blocked SQLAlchemy's optional native extension; the same

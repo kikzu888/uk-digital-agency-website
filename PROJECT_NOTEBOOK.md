@@ -184,3 +184,11 @@ Backend work remains local and outside this frontend release.
 
 Publication is pending authenticated access to the kikzu888 Vercel project.
 See [the exact target and verification record](docs/releases/2026-10-14-visual-refresh.md).
+
+GitHub source upload verified: commit `bd0f04c2e614453bb4af67bdc06c944affab8bb0`
+on `kikzu888/uk-digital-agency-website`, branch
+`work/venuscore-content-and-enquiries`; [draft PR #1](https://github.com/kikzu888/uk-digital-agency-website/pull/1).
+Windows Git credential manager initially selected an unauthorised profile and
+GitHub rejected the push. A command-scoped GitHub CLI credential helper used the
+approved valerigvinia profile to push to the verified kikzu888 repository. No
+global credential setting or repository target was changed.

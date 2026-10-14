@@ -1,6 +1,7 @@
 # VenusCore frontend visual refresh — 14 October 2026
 
-Status: prepared locally; publication pending authentication and release checks.
+Status: source and history uploaded to the kikzu888 work branch; Vercel
+publication pending agency authentication and the unresolved full-audit gate.
 
 ## Target and scope
 
@@ -19,7 +20,10 @@ not just the local project link. Do not substitute another project on access fai
 
 ## Source and deployment evidence
 
-- Source commit: pending.
+- Source commit: `bd0f04c2e614453bb4af67bdc06c944affab8bb0`.
+- Review: https://github.com/kikzu888/uk-digital-agency-website/pull/1 (draft).
+- CI: https://github.com/kikzu888/uk-digital-agency-website/actions/runs/38624540346
+  (backend passed; frontend was still running when this record was written).
 - Previous deployment: pending authenticated verification; the 8 October notebook
   records `dpl_FsrjFrEcobtG7nHQWBzRXA4YEF83`, which must not be assumed current.
 - New deployment ID and URL: pending.

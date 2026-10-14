@@ -89,6 +89,23 @@ Never select the personal portfolio. No database rollback is involved.
 
 ## Related records
 
+### Follow-up: compact three-column cards
+
+The owner requested smaller, symmetrical service and portfolio cards. Source
+`46b083e85028816b3d4090ed60a7a88421544489` uses three columns at 1024px+, two
+at 768px+, and one on phones, with equal card heights and aligned images/actions.
+The homepage portfolio preview now shows three projects in one desktop row.
+
+Published deployment `dpl_Ht1pmJJxSzs2mVMsV4o66puM6UM7`:
+https://frontend-8707tgc16-kikzu888.vercel.app. Both public aliases now point to
+this release in the verified kikzu888/frontend project. Vercel build (36 pages),
+ESLint and TypeScript passed. Live Chromium checks on services and portfolio
+passed at 390, 768, 1024 and 1440px for column count, equal card heights,
+image/action alignment and absence of horizontal overflow after fonts/layout
+settled. Roll back this follow-up to `dpl_BkeCaocdCw9SXJtEhDdWP7KXPFh9` /
+https://frontend-jvaq6emnq-kikzu888.vercel.app if required. Existing API and audit
+limitations above are unchanged.
+
 - [Changelog](../../CHANGELOG.md)
 - [Design and workflow decisions](../../DECISIONS.md)
 - [Asset prompts and palette](../visual-refresh-assets.json)

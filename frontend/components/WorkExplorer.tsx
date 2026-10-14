@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -22,7 +22,7 @@ export function WorkExplorer({ preview = false }: { preview?: boolean }) {
       (country === "All" || project.location === country) &&
       (sector === "All" || project.clientSector === sector),
   );
-  const shown = preview ? matches.slice(0, 4) : matches;
+  const shown = preview ? matches.slice(0, 3) : matches;
   return (
     <div className="mt-8">
       <fieldset>
@@ -97,17 +97,17 @@ export function WorkExplorer({ preview = false }: { preview?: boolean }) {
         {sector !== "All" ? ` / ${sector}` : ""}. Locations describe the
         projects, not VenusCore offices.
       </p>
-      <div className="mt-5 grid gap-6 md:grid-cols-2">
+      <div className="mt-5 grid auto-rows-fr gap-6 md:grid-cols-2 lg:grid-cols-3">
         {shown.map((project) => (
           <article
             key={project.slug}
-            className="image-hover-card overflow-hidden rounded-xl border border-slate-200 bg-white"
+            className="image-hover-card flex min-w-0 flex-col overflow-hidden rounded-xl border border-slate-200 bg-white"
           >
-            <div className="border-b border-slate-200 p-5">
+            <div className="border-b border-slate-200 p-5 min-h-44">
               <p className="text-sm font-semibold uppercase tracking-wide text-[#6941b0]">
                 {countryName(project.location)}
               </p>
-              <h3 className="mt-2 text-2xl font-semibold text-slate-950">
+              <h3 className="mt-2 text-xl font-semibold leading-7 text-slate-950 min-h-14">
                 {project.clientSector}
               </h3>
               <p className="mt-2 text-sm text-slate-600">{project.role}</p>
@@ -118,18 +118,18 @@ export function WorkExplorer({ preview = false }: { preview?: boolean }) {
                 alt={project.imageAlt}
                 width={900}
                 height={563}
-                sizes="(max-width:768px) 90vw, 44vw"
+                sizes="(min-width: 1280px) 395px, (min-width: 1024px) 31vw, (min-width: 768px) 46vw, 100vw"
                 className="aspect-[16/10] h-auto w-full bg-slate-100 object-contain"
               />
             </div>
-            <div className="p-5">
+            <div className="flex flex-1 flex-col items-start p-5">
               <p className="font-semibold text-slate-950">{project.title}</p>
               <p className="mt-3 leading-7 text-slate-600">
                 {project.shortDescription}
               </p>
               <Link
                 href={`/portfolio/${project.slug}`}
-                className="mt-4 inline-block font-semibold text-[#6941b0]"
+                className="mt-auto inline-block pt-4 font-semibold text-[#6941b0]"
               >
                 Explore the project
               </Link>

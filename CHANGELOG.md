@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-14 - Compact service and portfolio cards
+
+- Changed service and portfolio grids to three columns from 1024px, two from
+  768px and one on phones to reduce oversized desktop cards.
+- Equalised card heights, image frames, title space and action alignment;
+  reduced service padding and heading sizes. Homepage portfolio preview shows
+  one complete row of three projects; all ten remain on the portfolio page.
+- Updated responsive image sizes. ESLint, TypeScript and browser layout checks
+  passed at 390, 768, 1024 and 1440px for both pages.
+
 ## 2026-10-14 - Published: VenusCore visual refresh
 
 Published to the verified `kikzu888/frontend` Vercel project at

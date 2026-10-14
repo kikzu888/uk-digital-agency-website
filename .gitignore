@@ -37,3 +37,6 @@ Thumbs.db
 
 # Machine-specific test configuration
 playwright.local.config.ts
+
+# Local visual review artefacts
+.test-artifacts/

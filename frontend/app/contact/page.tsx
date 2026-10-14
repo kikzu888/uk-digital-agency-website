@@ -7,7 +7,7 @@ import { company } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact VenusCore to discuss a UK digital marketing, website, automation, CRM or cybersecurity project.",
+  description: "Contact VenusCore to discuss a UK digital marketing, website, automation, CRM or WhatsApp and email marketing project.",
   alternates: { canonical: "/contact" },
 };
 
@@ -18,20 +18,20 @@ export default function ContactPage() {
         <div>
           <SectionIntro
             eyebrow="Contact"
-            summary="Share the business challenge, current systems and preferred service. Placeholder contact details will be replaced with verified company information."
+            summary="Request a free consultation, discuss a project or ask for a free initial audit. Tell us what you would like to improve."
             title="Start with a clear conversation"
           />
           <dl className="mt-10 grid gap-5 text-sm text-slate-700">
             <div>
               <dt className="font-semibold text-slate-950">Phone</dt>
-              <dd className="mt-1">{company.phone}</dd>
+              <dd className="mt-1 grid gap-2"><a href="https://wa.me/971585968787">WhatsApp: +971 58 596 8787</a><a href="https://wa.me/995555102035">WhatsApp: +995 555 10 20 35</a></dd>
             </div>
             <div>
               <dt className="font-semibold text-slate-950">Email</dt>
               <dd className="mt-1">{company.email}</dd>
             </div>
             <div>
-              <dt className="font-semibold text-slate-950">Address</dt>
+              <dt className="font-semibold text-slate-950">Location</dt>
               <dd className="mt-1">{company.address}</dd>
             </div>
           </dl>

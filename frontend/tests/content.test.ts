@@ -13,13 +13,14 @@ describe("frontend content contracts", () => {
       "web-development",
       "ai-automation-processes",
       "crm-solutions",
-      "cybersecurity-services",
+      "whatsapp-email-marketing",
+      "seo",
     ]);
   });
 
-  it("marks demo portfolio projects as placeholders", () => {
-    expect(portfolioProjects.length).toBeGreaterThan(0);
-    expect(portfolioProjects.every((project) => project.isPlaceholder)).toBe(true);
+  it("attributes the ten approved projects to founder experience", () => {
+    expect(portfolioProjects).toHaveLength(10);
+    expect(portfolioProjects.every((project) => !project.isPlaceholder && project.attribution.includes("Founder experience"))).toBe(true);
   });
 
   it("keeps news articles published with SEO-friendly slugs", () => {

@@ -16,7 +16,7 @@ export function SiteFooter() {
             width={300}
           />
           <p className="mt-4 max-w-sm text-sm leading-6 text-slate-300">
-            Digital marketing, web development, AI automation, CRM and cybersecurity services for UK businesses.
+            Digital marketing, websites, SEO, CRM, WhatsApp and email marketing, and AI workflow automation for UK businesses.
           </p>
           <p className="mt-6 text-sm text-slate-400">{company.registrationNumber}</p>
         </div>
@@ -43,7 +43,9 @@ export function SiteFooter() {
         <div>
           <p className="font-semibold">Contact</p>
           <div className="mt-4 grid gap-3 text-sm text-slate-300">
-            <span>{company.phone}</span>
+            <a href="https://wa.me/971585968787">WhatsApp: +971 58 596 8787</a>
+            <a href="https://wa.me/995555102035">WhatsApp: +995 555 10 20 35</a>
+            <a href="https://www.linkedin.com/in/valeri-gviniashvili/">LinkedIn</a>
             <span>{company.email}</span>
             <span>{company.address}</span>
           </div>

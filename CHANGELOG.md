@@ -1,5 +1,29 @@
 # Changelog
 
+## 2026-10-14 - Prepared: VenusCore visual refresh
+
+Publication is pending; see [the release record](docs/releases/2026-10-14-visual-refresh.md).
+
+### Changed
+
+- Replaced grayscale service illustrations with seven original coloured WebP
+  images in lavender, periwinkle and peach.
+- Lightened action buttons and selected location filters; kept clear text and
+  keyboard focus states.
+- Replaced the boxed hero graphic with a proportionate celestial scene containing
+  drifting stars, orbital motion and pause/resume controls. Reduced motion is honoured.
+- Formatted the homepage, work explorer, enquiry form and animation source for
+  readability. Updated browser smoke tests to match the approved content.
+- Documented change-history responsibilities and strict `kikzu888` release targets.
+
+### Source baseline included
+
+The work branch also records previously uncommitted frontend content from the
+8 October work: ten founder-attributed projects, country/sector browsing, six
+approved service areas and consultation/project/audit enquiry choices. This
+describes the source baseline, not a new claim that backend storage or delivery
+has been deployed. Backend changes and database migration remain separate.
+
 ## 0.1.0 - Unreleased
 
 - Added Stage 1 planning documentation.

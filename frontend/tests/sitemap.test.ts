@@ -1,10 +1,16 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
-import sitemap from "../app/sitemap";
 import { newsArticles, portfolioProjects, services } from "../lib/content";
 
+afterEach(() => {
+  vi.unstubAllEnvs();
+  vi.resetModules();
+});
+
 describe("sitemap", () => {
-  it("contains static and dynamic public routes", () => {
+  it("contains static and dynamic public routes", async () => {
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "http://localhost:3000");
+    const { default: sitemap } = await import("../app/sitemap");
     const urls = sitemap().map((entry) => entry.url);
 
     expect(urls).toContain("http://localhost:3000");

@@ -6,7 +6,7 @@ import { company } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About VenusCore, a UK-focused digital agency for growth, automation and security.",
+  description: "About VenusCore, a UK-focused digital agency for marketing, websites and connected workflows.",
   alternates: { canonical: "/about" },
 };
 
@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1fr]">
           <SectionIntro
             eyebrow="About"
-            summary="VenusCore is being structured as a practical digital partner for UK SMEs that need dependable marketing, web, automation, CRM and security support."
+            summary="VenusCore is being structured as a practical digital partner for UK SMEs that need dependable marketing, websites, automation, CRM, WhatsApp and email marketing support."
             title="Digital delivery with commercial focus"
           />
           <Image
@@ -33,7 +33,7 @@ export default function AboutPage() {
           {[
             ["Practical strategy", "We start with the business problem and choose technology only when it improves the outcome."],
             ["Responsible delivery", "Security, accessibility, privacy and maintainability are treated as core requirements."],
-            ["Room to grow", "The platform is planned so new service areas, locations, articles and case studies can be added cleanly."],
+            ["Room to grow", "Start with a focused improvement and expand the work as your priorities evolve."],
           ].map(([title, text]) => (
             <article className="rounded-md border border-slate-200 bg-white/90 p-6" key={title}>
               <h2 className="text-xl font-semibold text-slate-950">{title}</h2>
@@ -43,9 +43,9 @@ export default function AboutPage() {
         </div>
         <div className="mt-12 rounded-md bg-[#07112f] p-8 text-white">
           <p className="text-sm text-slate-300">{company.name}</p>
-          <h2 className="mt-3 text-2xl font-semibold">Placeholder business details</h2>
+          <h2 className="mt-3 text-2xl font-semibold">Experience across marketing and technical delivery</h2>
           <p className="mt-3 text-slate-300">
-            UK Phone Number, Business Email, UK Business Address and Company Registration Number will be replaced once verified details are provided.
+            Founded by Valeri Gviniashvili, whose work spans real estate campaigns, website development, SEO, Bitrix24 and AMO CRM workflows, and WhatsApp lead re-engagement. Explore the portfolio for project-specific roles and scope.
           </p>
         </div>
       </section>

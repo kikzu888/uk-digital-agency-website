@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07112f"/><stop offset="1" stop-color="#125b65"/></linearGradient></defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<circle cx="1080" cy="40" r="300" fill="#56d0ba" opacity=".08"/>
+<path d="M380 330H820" stroke="#82d8cc" stroke-width="5" stroke-dasharray="12 12"/>
+<rect x="95" y="105" width="435" height="410" rx="28" fill="#fff"/>
+<rect x="670" y="105" width="435" height="410" rx="28" fill="#fff"/>
+<circle cx="312" cy="245" r="70" fill="#25d366"/>
+<path d="M278 230Q270 264 307 281Q334 294 348 272L329 260L318 269Q299 261 294 246L301 235L287 217Z" fill="white"/>
+<path d="M269 291L278 272L296 286Z" fill="white"/>
+<rect x="808" y="193" width="160" height="108" rx="12" fill="#e8f2fa" stroke="#0b4fd8" stroke-width="6"/>
+<path d="M814 204L888 259L962 204" fill="none" stroke="#0b4fd8" stroke-width="6"/>
+<g font-family="Arial,sans-serif" text-anchor="middle"><text x="312" y="379" font-size="36" font-weight="600" fill="#07112f">WhatsApp</text><text x="888" y="379" font-size="36" font-weight="600" fill="#07112f">Email Marketing</text><text x="312" y="428" font-size="22" fill="#526477">Re-engagement &amp; follow-up</text><text x="888" y="428" font-size="22" fill="#526477">Campaigns &amp; customer journeys</text><text x="600" y="592" font-size="28" fill="white">Relevant messages. Connected conversations.</text></g>
+</svg>

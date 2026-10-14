@@ -216,4 +216,5 @@ baseline, prepare the enquiry-intent schema and homepage/service content outline
 - Added contained celestial hero: drifting/twinkling stars, orbiting satellite, occasional shooting star, planet, pause/resume and reduced-motion support.
 - Verified local /, /services and /services/seo at 390, 768 and 1440px: no horizontal overflow, images decoded, no page errors. Pause/resume and reduced-motion assertions passed. Screenshots in ignored .test-artifacts/visual-refresh/.
 - ESLint and TypeScript passed; Vitest 5/5 passed. Isolated production build with --webpack passed (36 pages). Default Turbopack build blocked by dependency junction outside its root; no claim of clean-install reproducibility.
-- Local preview uses an isolated copy without env files and a loopback API target. No live form submission. Changes remain local; Vercel kikzu888 access previously returned 403.
+- Local preview uses an isolated copy without env files and a loopback API target. No live form submission.
+- Release update: clean-install default Turbopack build passed (36 pages); durable E2E 6/6 passed. Published to verified kikzu888/frontend on 14 October; see docs/releases/2026-10-14-visual-refresh.md. Runtime audit is clean; full audit still fails on development-only dependencies. Production enquiry API configuration remains pending.

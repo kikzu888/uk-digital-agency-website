@@ -182,7 +182,7 @@ clean; the full audit has an unpatched development-only braces advisory and
 remains a failing CI gate. No audit suppression or forced downgrade was added.
 Backend work remains local and outside this frontend release.
 
-Publication is pending authenticated access to the kikzu888 Vercel project.
+Publication completed after confirmed device login to the kikzu888 Vercel account.
 See [the exact target and verification record](docs/releases/2026-10-14-visual-refresh.md).
 
 GitHub source upload verified: commit `bd0f04c2e614453bb4af67bdc06c944affab8bb0`
@@ -192,3 +192,11 @@ Windows Git credential manager initially selected an unauthorised profile and
 GitHub rejected the push. A command-scoped GitHub CLI credential helper used the
 approved valerigvinia profile to push to the verified kikzu888 repository. No
 global credential setting or repository target was changed.
+
+Production release completed at approximately 23:41 Asia/Dubai on 14 October:
+source `637cc9b0a57c4d3d27cbc68da3c908c8662130c6`, deployment
+`dpl_BkeCaocdCw9SXJtEhDdWP7KXPFh9`. The user's main public alias now serves
+the refreshed frontend. Public page/image HTTP checks passed. The full CI audit
+still fails on dev-only dependencies, and the existing localhost API fallback
+must be replaced with a verified backend connection before enquiries can work.
+No backend changes or database migrations were released.

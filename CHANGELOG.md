@@ -1,8 +1,10 @@
 # Changelog
 
-## 2026-10-14 - Prepared: VenusCore visual refresh
+## 2026-10-14 - Published: VenusCore visual refresh
 
-Publication is pending; see [the release record](docs/releases/2026-10-14-visual-refresh.md).
+Published to the verified `kikzu888/frontend` Vercel project at
+https://frontend-eta-lovat-45.vercel.app/; see [the release record](docs/releases/2026-10-14-visual-refresh.md)
+for deployment evidence, rollback and the outstanding API/audit limitations.
 
 ### Changed
 

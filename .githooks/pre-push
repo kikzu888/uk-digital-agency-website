@@ -1,0 +1,12 @@
+#!/bin/sh
+# Local guard only. Enable with: git config core.hooksPath .githooks
+while read -r local_ref local_sha remote_ref remote_sha
+do
+  case "$remote_ref" in
+    refs/heads/main|refs/heads/master|refs/heads/production)
+      echo 'Direct production-branch pushes are blocked in this working copy. Use a reviewed pull request.' >&2
+      exit 1
+      ;;
+  esac
+done
+exit 0

@@ -39,23 +39,26 @@ export default async function PortfolioProjectPage({ params }: PortfolioProjectP
   return (
     <main>
       <article className="mx-auto max-w-5xl px-6 py-20">
-        <Link className="text-sm font-semibold text-[#0b4fd8]" href="/portfolio">
+        <Link className="text-sm font-semibold text-[#6941b0]" href="/portfolio">
           Back to Portfolio
         </Link>
         {project.isPlaceholder ? (
           <p className="mt-8 text-sm font-semibold uppercase text-amber-700">Placeholder case study</p>
         ) : null}
         <h1 className="mt-3 text-5xl font-semibold text-slate-950">{project.title}</h1>
+        <p className="mt-4 text-sm text-slate-600">{project.attribution}</p>
         <p className="mt-5 text-lg leading-8 text-slate-600">{project.shortDescription}</p>
         <Image
           alt={project.imageAlt}
-          className="mt-10 rounded-md object-cover"
+          className="mt-10 aspect-[16/9] h-auto w-full rounded-md bg-slate-100 object-contain"
           height={700}
           priority
           src={project.images[0]}
           width={1200}
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <ContentBlock title="Founder’s role" value={project.role} />
+          <ContentBlock title="Project location" value={project.location} />
           <ContentBlock title="Client sector" value={project.clientSector} />
           <ContentBlock title="Project category" value={project.category} />
           <ContentBlock title="Business problem" value={project.businessProblem} />
@@ -79,7 +82,7 @@ export default async function PortfolioProjectPage({ params }: PortfolioProjectP
             ))}
           </ul>
         </section>
-        <Link className="mt-10 inline-flex rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white" href="/contact">
+        <Link className="mt-10 inline-flex rounded-md venus-button px-5 py-3 font-semibold text-white" href="/contact">
           Request a Similar Project
         </Link>
       </article>

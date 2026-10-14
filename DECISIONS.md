@@ -1,5 +1,46 @@
 # Decisions
 
+## 2026-10-14 - Service art and action colours
+
+Context: green service imagery conflicted with VenusCore's palette. A grayscale
+filter removed the conflict but also removed the colour the owner wanted.
+
+Decision: replace service artwork with seven original lavender, periwinkle and
+peach illustrations; retain full colour. Use shared `.venus-button` tokens with
+a light lavender surface and dark plum text, including hover/focus/disabled states.
+
+Reason: a coherent original palette addresses the mismatch without desaturating
+the site. A shared style makes future button changes consistent and reviewable.
+
+Consequences: originals remain available; optimised WebP assets live in
+`frontend/public/images/venus-*-v2.webp`. Generation prompts and palette are in
+`docs/visual-refresh-assets.json`. Artwork is decorative illustration, not client
+evidence. Project photographs and founder attribution remain distinct.
+
+## 2026-10-14 - Contained celestial motion
+
+Decision: render a proportionate CSS star field, planet and orbital motion in
+`frontend/components/CosmicScene.tsx`, with pause/resume and reduced-motion support.
+
+Reason: the owner requested space/star animation. Keeping it beside the hero
+copy preserves reading contrast and avoids a heavy WebGL or animation dependency.
+
+Consequences: the component owns only its pause state. Deterministic star positions
+avoid hydration drift. Browser checks cover motion controls and reduced motion.
+
+## 2026-10-14 - Change history and release traceability
+
+Decision: retain the existing changelog, decision log, task list and notebook,
+with a short README guide and one record per release under `docs/releases/`.
+
+Reason: the owner needs to see when, what and why changes happened. One giant
+activity log or comments on every line would make the code harder to understand.
+
+Consequences: small descriptive commits capture implementation; changelog entries
+capture visible outcomes; decisions capture rationale; release records connect
+verified source to a deployment. Pending and completed publication are explicit.
+Every remote write must first verify the `kikzu888` repository/team and project.
+
 ## 2026-07-22 - Architecture
 
 Decision: Use a separated monorepo with `frontend/` and `backend/`.

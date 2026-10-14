@@ -13,6 +13,8 @@ playwright-report/
 test-results/
 
 .venv/
+.vercel/
+*.egg-info/
 venv/
 __pycache__/
 *.py[cod]
@@ -32,3 +34,9 @@ backups/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Machine-specific test configuration
+playwright.local.config.ts
+
+# Local visual review artefacts
+.test-artifacts/

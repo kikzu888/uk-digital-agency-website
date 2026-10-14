@@ -55,22 +55,22 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
               </option>
             ))}
           </select>
-          <button className="rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white" type="submit">
+          <button className="rounded-md venus-button px-5 py-3 font-semibold text-white" type="submit">
             Search
           </button>
         </form>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {items.map((article) => (
             <article className="rounded-md border border-slate-200 bg-white/90 shadow-sm" key={article.slug}>
-              <Image
+              <div className="card-image-frame"><Image
                 alt={article.featuredImageAlt}
                 className="h-48 w-full rounded-t-md object-cover"
                 height={500}
                 src={article.featuredImage}
                 width={800}
-              />
+              /></div>
               <div className="p-6">
-                <p className="text-xs font-semibold uppercase text-[#0b4fd8]">{article.category}</p>
+                <p className="text-xs font-semibold uppercase text-[#6941b0]">{article.category}</p>
                 <h2 className="mt-3 text-xl font-semibold text-slate-950">
                   <Link href={`/news/${article.slug}`}>{article.title}</Link>
                 </h2>

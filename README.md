@@ -1,6 +1,11 @@
 # VenusCore Digital Agency Website
 
-Production-ready monorepo for a UK-focused digital agency website.
+Monorepo for a UK-focused digital agency website.
+
+**Safe continuation:** start with [the isolated development guide](docs/safe-development.md)
+and [the Vercel recovery report](docs/vercel-recovery.md). Work on `sync/*` or
+`work/*` branches; do not merge this recovery into `main` or deploy before the
+release checks in that guide are complete.
 
 ## Planned Stack
 
@@ -90,6 +95,26 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\check.ps1
 ```
 
 ## Key Documents
+
+### How to understand a change
+
+- [CHANGELOG.md](CHANGELOG.md): dated, user-visible changes; distinguish prepared
+  changes from published releases.
+- [DECISIONS.md](DECISIONS.md): context, decision, reason and consequences for
+  significant design or technical choices. Routine fixes need only a commit.
+- [PROJECT_NOTEBOOK.md](PROJECT_NOTEBOOK.md): work sessions, verification evidence
+  and links to release records. [TASKS.md](TASKS.md) tracks remaining work.
+- Git commits and pull requests explain one coherent change, why it was needed,
+  how it was tested and any limitations. Reference the affected paths and the
+  release commit; do not duplicate whole diffs in prose.
+- Release records under `docs/releases/` identify the exact source commit,
+  `kikzu888` owner, frontend project, deployment ID/URL, previous deployment and
+  validation. Record successful publication only after checking the live result.
+
+Keep components focused, use descriptive names, share design tokens, and format
+TSX/CSS consistently. Comments should explain non-obvious constraints or intent;
+Git history records who changed a line and when. Never add secrets, `.env` files,
+dependencies, caches or build output to the change history.
 
 - [Project notebook](PROJECT_NOTEBOOK.md)
 - [Tasks](TASKS.md)

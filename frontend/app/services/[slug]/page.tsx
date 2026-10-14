@@ -40,22 +40,22 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     <main>
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.85fr_1fr]">
         <div>
-          <p className="text-sm font-semibold uppercase text-[#0b4fd8]">Service</p>
+          <p className="text-sm font-semibold uppercase text-[#6941b0]">Service</p>
           <h1 className="mt-3 max-w-4xl text-5xl font-semibold text-slate-950">{service.title}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">{service.summary}</p>
           <div className="mt-10">
-            <Link className="rounded-md bg-[#0b4fd8] px-5 py-3 font-semibold text-white" href="/contact">
+            <Link className="rounded-md venus-button px-5 py-3 font-semibold text-white" href="/contact">
               Request a Quote
             </Link>
           </div>
         </div>
         <Image
           alt={service.imageAlt}
-          className="h-auto rounded-md object-cover shadow-xl"
-          height={700}
+          className="service-brand-image h-auto rounded-2xl object-cover"
+          height={800}
           priority
-          src={service.image}
-          width={1100}
+          sizes="(min-width: 1024px) 50vw, 100vw" src={service.image}
+          width={1200}
         />
       </section>
 

@@ -56,7 +56,7 @@ export function AnalyticsConsent() {
                 Decline
               </button>
               <button
-                className="rounded-md bg-[#0b4fd8] px-4 py-2 text-sm font-semibold text-white"
+                className="rounded-md venus-button px-4 py-2 text-sm font-semibold text-white"
                 onClick={() => saveConsent("accepted")}
                 type="button"
               >

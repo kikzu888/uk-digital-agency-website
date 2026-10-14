@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-14",
+  "tool": "Built-in image_gen",
+  "palette": {
+    "background": "#faf9fc",
+    "lavender": "#d6c2f4",
+    "ink": "#32214c",
+    "periwinkle": "#9daff2",
+    "peach": "#f3c1a7"
+  },
+  "assets": [
+    {
+      "path": "frontend/public/images/venus-overview-v2.webp",
+      "prompt": "Create a polished wide 3:2 editorial 3D illustration for VenusCore digital agency services overview. A luminous opalescent glass sphere at the centre connects to six elegant physical objects arranged in a deliberate orbit: a coral ascending bar chart, a periwinkle browser window, a lilac workflow of connected nodes, a peach customer contact card, a blue envelope and speech bubble, and a lavender magnifying glass. Realistic frosted glass and satin ceramic materials, soft studio lighting and beautiful shadows on pale lavender background #f5f0fb. Colour palette ONLY lavender #cbb5f4, periwinkle #9daff2, peach #f3c1a7, ivory and subtle deep plum details. Rich but gentle colour, sophisticated art direction, no green, no monochrome, no black background, no readable text, no logos, no watermark. Objects fill central 75 percent with generous breathing room. This is an actual website illustration asset, not a website screenshot."
+    },
+    {
+      "path": "frontend/public/images/venus-marketing-v2.webp",
+      "prompt": "Use case: stylized-concept. Create one wide 3:2 website service illustration for VenusCore: a sculptural peach ascending bar chart with a lilac target and a small translucent campaign analytics panel. Premium physical 3D still-life, satin ceramic and frosted glass, subtle soft shadows on pale lavender #f5f0fb studio background. Colours lavender #cbb5f4, periwinkle #9daff2, peach #f3c1a7 and ivory. Gentle rich colour, visually clean, sophisticated, centre composition with objects within middle 65% so safe for wide card crops. No green, no monochrome, no dark background, no text, no letters, no logo, no watermark. Single coherent scene, not a collage or website mockup."
+    },
+    {
+      "path": "frontend/public/images/venus-web-v2.webp",
+      "prompt": "Use case: stylized-concept. Create one wide 3:2 website service illustration for VenusCore: a periwinkle desktop browser window and a peach mobile phone displaying elegant abstract website layouts. Premium physical 3D still-life, satin ceramic and frosted glass, subtle soft shadows on pale lavender #f5f0fb studio background. Colours lavender #cbb5f4, periwinkle #9daff2, peach #f3c1a7 and ivory. Gentle rich colour, visually clean, sophisticated, centre composition with objects within middle 65% so safe for wide card crops. No green, no monochrome, no dark background, no text, no letters, no logo, no watermark. Single coherent scene, not a collage or website mockup."
+    },
+    {
+      "path": "frontend/public/images/venus-automation-v2.webp",
+      "prompt": "Use case: stylized-concept. Create one wide 3:2 website service illustration for VenusCore: a branching workflow of frosted lilac cubes connected by curved pearl tubes, with a small warm peach luminous core. Premium physical 3D still-life, satin ceramic and frosted glass, subtle soft shadows on pale lavender #f5f0fb studio background. Colours lavender #cbb5f4, periwinkle #9daff2, peach #f3c1a7 and ivory. Gentle rich colour, visually clean, sophisticated, centre composition with objects within middle 65% so safe for wide card crops. No green, no monochrome, no dark background, no text, no letters, no logo, no watermark. Single coherent scene, not a collage or website mockup."
+    },
+    {
+      "path": "frontend/public/images/venus-crm-v2.webp",
+      "prompt": "Use case: stylized-concept. Create one wide 3:2 website service illustration for VenusCore: three peach and lavender customer profile cards neatly organised in a translucent periwinkle sales pipeline. Premium physical 3D still-life, satin ceramic and frosted glass, subtle soft shadows on pale lavender #f5f0fb studio background. Colours lavender #cbb5f4, periwinkle #9daff2, peach #f3c1a7 and ivory. Gentle rich colour, visually clean, sophisticated, centre composition with objects within middle 65% so safe for wide card crops. No green, no monochrome, no dark background, no text, no letters, no logo, no watermark. Single coherent scene, not a collage or website mockup."
+    },
+    {
+      "path": "frontend/public/images/venus-messaging-v2.webp",
+      "prompt": "Use case: stylized-concept. Create one wide 3:2 website service illustration for VenusCore: a periwinkle envelope and two peach and lilac speech bubbles floating together. Premium physical 3D still-life, satin ceramic and frosted glass, subtle soft shadows on pale lavender #f5f0fb studio background. Colours lavender #cbb5f4, periwinkle #9daff2, peach #f3c1a7 and ivory. Gentle rich colour, visually clean, sophisticated, centre composition with objects within middle 65% so safe for wide card crops. No green, no monochrome, no dark background, no text, no letters, no logo, no watermark. Single coherent scene, not a collage or website mockup."
+    },
+    {
+      "path": "frontend/public/images/venus-seo-v2.webp",
+      "prompt": "Use case: stylized-concept. Create one wide 3:2 website service illustration for VenusCore: a translucent lavender magnifying glass over an ivory browser search panel with periwinkle search result lines. Premium physical 3D still-life, satin ceramic and frosted glass, subtle soft shadows on pale lavender #f5f0fb studio background. Colours lavender #cbb5f4, periwinkle #9daff2, peach #f3c1a7 and ivory. Gentle rich colour, visually clean, sophisticated, centre composition with objects within middle 65% so safe for wide card crops. No green, no monochrome, no dark background, no text, no letters, no logo, no watermark. Single coherent scene, not a collage or website mockup."
+    }
+  ]
+}

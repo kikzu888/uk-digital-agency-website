@@ -2,9 +2,9 @@ export const company = {
   name: process.env.NEXT_PUBLIC_COMPANY_NAME ?? "VenusCore",
   logo: "/brand/venuscore-logo.png",
   mark: "/brand/venuscore-mark.png",
-  phone: process.env.NEXT_PUBLIC_COMPANY_PHONE ?? "UK Phone Number",
+  phone: process.env.NEXT_PUBLIC_COMPANY_PHONE ?? "+971 58 596 8787",
   email: process.env.NEXT_PUBLIC_COMPANY_EMAIL ?? "Business Email",
-  address: "UK Business Address",
+  address: "London",
   registrationNumber: "Company Registration Number",
 };
 
@@ -17,15 +17,15 @@ export const navItems = [
   { href: "/contact", label: "Contact" },
 ];
 
-export const services = [
+const originalServices = [
   {
     slug: "digital-marketing",
     title: "Digital Marketing",
     summary:
       "Focused campaigns, search visibility and conversion improvements for UK companies that need measurable growth.",
-    image: "/images/service-digital-marketing.png",
+    image: "/images/venus-marketing-v2.webp",
     imageAlt:
-      "Marketing strategist reviewing abstract campaign analytics and conversion dashboards for a UK business",
+      "Peach growth chart and lavender campaign target with an analytics panel",
     problems: [
       "Low-quality enquiries from paid or organic channels",
       "Unclear marketing attribution",
@@ -53,9 +53,9 @@ export const services = [
     title: "Web Development",
     summary:
       "Fast, secure and SEO-ready websites built around clear business goals and practical content management.",
-    image: "/images/service-web-development.png",
+    image: "/images/venus-web-v2.webp",
     imageAlt:
-      "Responsive website layouts shown across desktop, tablet and mobile devices in a development workspace",
+      "Periwinkle desktop and peach phone showing responsive website layouts",
     problems: [
       "Slow or outdated websites",
       "Poor mobile experience",
@@ -83,9 +83,9 @@ export const services = [
     title: "AI Automation Processes",
     summary:
       "Practical automation for repetitive business workflows, using AI where it creates real operational value.",
-    image: "/images/service-ai-automation.png",
+    image: "/images/venus-automation-v2.webp",
     imageAlt:
-      "Business automation workflow dashboard with connected approval steps and AI-assisted process cards",
+      "Lavender workflow nodes connected to a warm luminous automation core",
     problems: [
       "Manual admin slowing down teams",
       "Repeated data entry across tools",
@@ -113,9 +113,9 @@ export const services = [
     title: "CRM Solutions",
     summary:
       "CRM setup, improvement and automation that helps teams manage leads, customers and follow-up clearly.",
-    image: "/images/service-crm-solutions.png",
+    image: "/images/venus-crm-v2.webp",
     imageAlt:
-      "CRM pipeline dashboard and customer follow-up interface on a business laptop",
+      "Customer profile cards organised inside a translucent sales pipeline",
     problems: [
       "Leads lost in spreadsheets or inboxes",
       "No clear sales pipeline",
@@ -227,14 +227,14 @@ export const newsArticles = [
     publishedAt: "2026-07-08",
     updatedAt: "2026-07-15",
     category: "Artificial Intelligence",
-    featuredImage: "/images/service-ai-automation.png",
+    featuredImage: "/images/venus-automation-v2.webp",
     featuredImageAlt:
       "AI automation workflow dashboard with connected process steps for a service business",
     status: "published",
   },
 ];
 
-export const portfolioProjects = [
+export const demoPortfolioProjects = [
   {
     title: "Placeholder CRM and website workflow",
     slug: "placeholder-crm-website-workflow",
@@ -266,3 +266,76 @@ export const portfolioProjects = [
     isPlaceholder: true,
   },
 ];
+
+export { portfolioProjects } from "./realWork";
+
+export const services = [...originalServices.filter(service => service.slug !== "cybersecurity-services"), ...[
+  {
+    "slug": "whatsapp-email-marketing",
+    "title": "WhatsApp & Email Marketing",
+    "summary": "Audience-specific messaging, re-engagement campaigns and follow-up journeys that connect marketing with customer conversations.",
+    "image": "/images/venus-messaging-v2.webp",
+    "imageAlt": "Periwinkle envelope with peach and lavender conversation bubbles",
+    "problems": [
+      "Inconsistent lead follow-up",
+      "Disconnected email and WhatsApp communication",
+      "Messages without a clear purpose"
+    ],
+    "benefits": [
+      "Clearer messaging and segmentation",
+      "Structured re-engagement journeys",
+      "Consistent handover to sales"
+    ],
+    "process": [
+      "Review",
+      "Audience mapping",
+      "Message planning",
+      "Setup and testing",
+      "Reporting"
+    ],
+    "faqs": [
+      {
+        "question": "Can we start with an audit?",
+        "answer": "Yes. An initial audit is free. We agree the scope before reviewing your setup."
+      },
+      {
+        "question": "Can you improve our existing setup?",
+        "answer": "Yes. We review the current tools and agree practical changes before implementation."
+      }
+    ]
+  },
+  {
+    "slug": "seo",
+    "title": "Search Engine Optimisation",
+    "summary": "Technical and on-page SEO, content structure and search-led improvements for business websites.",
+    "image": "/images/venus-seo-v2.webp",
+    "imageAlt": "Lavender magnifying glass over a browser search results panel",
+    "problems": [
+      "Weak search visibility",
+      "Technical website issues",
+      "Content that misses visitor needs"
+    ],
+    "benefits": [
+      "Clearer website structure",
+      "Prioritised search improvements",
+      "Useful content aligned with your offer"
+    ],
+    "process": [
+      "Audit",
+      "Prioritisation",
+      "Technical improvements",
+      "Content optimisation",
+      "Review"
+    ],
+    "faqs": [
+      {
+        "question": "Can we start with an audit?",
+        "answer": "Yes. An initial audit is free. We agree the scope before reviewing your setup."
+      },
+      {
+        "question": "Can you improve our existing setup?",
+        "answer": "Yes. We review the current tools and agree practical changes before implementation."
+      }
+    ]
+  }
+]];

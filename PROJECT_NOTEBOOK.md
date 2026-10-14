@@ -161,3 +161,42 @@ docker compose up --build
 Source code is pushed to GitHub at `https://github.com/kikzu888/uk-digital-agency-website`.
 
 Not deployed to hosting. No domain, hosting, or production deployment has been purchased or created.
+
+## 2026-10-14 - Visual refresh and release preparation
+
+The owner requested coloured service imagery, lighter action buttons and a
+proportionate celestial homepage animation, then reviewed the local preview and
+requested Vercel publication plus GitHub history. They reiterated that the owner
+must be kikzu888 on both services.
+
+Implemented seven generated WebP illustrations, shared CTA tokens and a small
+CosmicScene component with pause/resume and reduced-motion support. Formatted
+the compact homepage, work explorer, enquiry form and CSS for readability.
+Updated stale E2E expectations and made the sitemap unit test env-independent.
+
+Existing CHANGELOG.md and DECISIONS.md are now updated, with a README map of
+which record answers what/why/when and the linked release record below.
+
+Clean npm ci and default Turbopack build passed. Runtime dependency audit is
+clean; the full audit has an unpatched development-only braces advisory and
+remains a failing CI gate. No audit suppression or forced downgrade was added.
+Backend work remains local and outside this frontend release.
+
+Publication completed after confirmed device login to the kikzu888 Vercel account.
+See [the exact target and verification record](docs/releases/2026-10-14-visual-refresh.md).
+
+GitHub source upload verified: commit `bd0f04c2e614453bb4af67bdc06c944affab8bb0`
+on `kikzu888/uk-digital-agency-website`, branch
+`work/venuscore-content-and-enquiries`; [draft PR #1](https://github.com/kikzu888/uk-digital-agency-website/pull/1).
+Windows Git credential manager initially selected an unauthorised profile and
+GitHub rejected the push. A command-scoped GitHub CLI credential helper used the
+approved valerigvinia profile to push to the verified kikzu888 repository. No
+global credential setting or repository target was changed.
+
+Production release completed at approximately 23:41 Asia/Dubai on 14 October:
+source `637cc9b0a57c4d3d27cbc68da3c908c8662130c6`, deployment
+`dpl_BkeCaocdCw9SXJtEhDdWP7KXPFh9`. The user's main public alias now serves
+the refreshed frontend. Public page/image HTTP checks passed. The full CI audit
+still fails on dev-only dependencies, and the existing localhost API fallback
+must be replaced with a verified backend connection before enquiries can work.
+No backend changes or database migrations were released.

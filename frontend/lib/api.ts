@@ -7,6 +7,11 @@ export type AdminLoginResponse = {
 
 export type ContactSubmission = {
   id: number;
+  enquiry_intent: string;
+  website_url: string;
+  audit_area: string;
+  timeline: string;
+  preferred_time: string;
   first_name: string;
   last_name: string;
   company_name: string;
@@ -28,7 +33,10 @@ async function parseJsonResponse<T>(response: Response): Promise<T> {
   return (await response.json()) as T;
 }
 
-export async function loginAdmin(email: string, password: string): Promise<AdminLoginResponse> {
+export async function loginAdmin(
+  email: string,
+  password: string,
+): Promise<AdminLoginResponse> {
   const response = await fetch(`${apiUrl}/api/v1/admin/auth/login`, {
     body: JSON.stringify({ email, password }),
     credentials: "include",
